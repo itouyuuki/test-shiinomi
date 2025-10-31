@@ -1,0 +1,88 @@
+body {
+    font-family: 'M+PLUS+Rounded+1c','BIZ+UDPGothic',sans-serif;
+    background-color: #F7F4E9;
+}
+
+.btn-1 {
+    text-decoration: none;
+    display: block;
+}
+
+/************
+ページ内ナビ
+*************/
+.fasility-navi {
+    display: none;
+}
+
+.content {
+    max-width: 880px;
+}
+
+.content details summary {
+    background-color: #9F2A00;
+    color: #fff;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 8px 20px;
+}
+
+.content details summary::after {
+    display: block;
+    content: "";
+    background: url(arrow-page-navi.svg) no-repeat;
+    width: 28px;
+    aspect-ratio: 1;
+    background-size: contain;
+}
+
+.content details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.navi {
+    padding: 4px 0;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 10PX;
+    box-shadow: 0 4px 10px rgba(159,42,0,0.2);
+}
+
+.navi li {
+    list-style: none;
+    margin: 12px;
+    border-bottom: 1px solid #9F2A00;
+    padding: 0 8px 4px;
+}
+
+.navi li a {
+    text-decoration: none;
+    color: #3F342D;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navi li a::after {
+    display: block;
+    content: "";
+    background: url(navi-arrow.svg) no-repeat;
+    width: 24px;
+    aspect-ratio: 1;
+    background-size: contain;
+}
+
+@media(min-width:640px){
+    .fasility-navi {
+        display: block;
+        max-width: 300px;
+    }
+
+    .content details {
+        display: none;
+    }    
+}
