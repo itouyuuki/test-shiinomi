@@ -32,30 +32,30 @@ $og_image = '';
 <main>
 <div class="fasility-navi">
     <ul class="navi">
-        <li><a href="#news">お知らせ</a></li>
-        <li><a href="#blog">ブログ</a></li>
-        <li><a href="#policy">運営方針</a></li>
-        <li><a href="#work">作業風景</a></li>
-        <li><a href="#event">行事風景</a></li>
-        <li><a href="#fasility">施設概要</a></li>
-        <li><a href="#business">事業の概要</a></li>
-        <li><a href="#guide">ご利用案内</a></li>
-        <li><a href="#fees">ご利用料金</a></li>
+        <li><a href="#news" class="btn-1">お知らせ</a></li>
+        <li><a href="#blog" class="btn-1">ブログ</a></li>
+        <li><a href="#support" class="btn-1">
+            <p>
+                しいのみ園の<span class="bp">支援内容</span>
+            </p>
+        </a></li>
+        <li><a href="#guide" class="btn-1">ご利用案内</a></li>
+        <li><a href="#policy" class="btn-1">運営方針</a></li>
+        <li><a href="#fasility" class="btn-1">施設概要</a></li>
+        <li><a href="#fees" class="btn-1">ご利用料金</a></li>
     </ul>
 </div>
 <div class="content">
     <details>
         <summary>このページの目次を見る</summary>
         <ul class="navi">
-            <li><a href="#news">お知らせ</a></li>
-            <li><a href="#blog">ブログ</a></li>
-            <li><a href="#policy">運営方針</a></li>
-            <li><a href="#work">作業風景</a></li>
-            <li><a href="#event">行事風景</a></li>
-            <li><a href="#fasility">施設概要</a></li>
-            <li><a href="#business">事業の概要</a></li>
-            <li><a href="#guide">ご利用案内</a></li>
-            <li><a href="#fees">ご利用料金</a></li>
+            <li><a href="#news" class="btn-1">お知らせ</a></li>
+            <li><a href="#blog" class="btn-1">ブログ</a></li>
+            <li><a href="#support" class="btn-1">しいのみ園の支援内容</a></li>
+            <li><a href="#guide" class="btn-1">ご利用案内</a></li>
+            <li><a href="#policy" class="btn-1">運営方針</a></li>
+            <li><a href="#fasility" class="btn-1">施設概要</a></li>
+            <li><a href="#fees" class="btn-1">ご利用料金</a></li>
         </ul>
     </details>
     <section class="fv">
@@ -66,18 +66,235 @@ $og_image = '';
             </hgroup>
             <p class="access">
                 〒386-0034<br>
-                上田市中之条801番地<br> TEL:0268-27-3166　FAX:0268-27-3175
+                上田市中之条801番地<br>
+                <span class="highlight">TEL</span>:0268-27-3166　<span class="bp"><span class="highlight">FAX</span>:0268-27-3175</span>
             </p>
         </div>
+        <div class="fv-content">
+            <img src="fv.jpg" alt="" class="fv-image">
+            <div class="fv-inner">
+                <h2>
+                    笑顔が咲く、<span class="bp">わたしの居場所。</span>
+                </h2>
+                <p class="text">
+                    上田しいのみ園は、18歳以上の障がいのある方が、自分らしい毎日を過ごすための生活の場です。<br>
+                    入所支援や生活介護、短期入所を通じて、一人ひとりのペースに寄り添いながら、安心して過ごせる時間を支えています。<br>
+                    軽作業や創作活動などに取り組みながら、自然と笑顔が生まれるあたたかな日々がここにあります。
+                </p>
+            </div>
+        </div>
     </section>
-    <section id="news"></section>
-    <section id="blog"></section>
-    <section id="policy"></section>
-    <section id="work"></section>
-    <section id="event"></section>
-    <section id="fasility"></section>
-    <section id="business"></section>
-    <section id="guide"></section>
+    <section id="news">
+        <hgroup class="content-head">
+            <div class="head-wr">
+                <h2>お知らせ</h2>
+                <p>- しいのみ通信</p>
+            </div>
+        </hgroup>
+        <div class="content-inner">
+            <img src="news.jpg" alt="">
+            <div class="news-wr">
+                <h3>みんなで過ごす、あたたかい時間</h3>
+                <p class="text">
+                    朝ごはんを食べたら、ラジオ体操で元気に一日をスタート。<br>
+                    日中は籠作りやプラスチック製品の箱詰め、清拭布たたみなどに取り組みます。<br>
+                    午後はヨガや書道などで自分の時間も楽しみ、笑顔あふれる穏やかな毎日を過ごしています。
+                </p>
+                <a href="" class="btn-1">日課を見る</a>
+            </div>
+        </div>
+        <div class="images">
+            <img src="news-1.jpg" alt="">
+            <img src="news-2.jpg" alt="">
+            <img src="news-3.jpg" alt="">
+            <img src="news-4.jpg" alt="">
+        </div>
+    </section>
+    <section id="blog">
+        <hgroup class="content-head">
+            <div class="head-wr">
+                <h2>ブログ</h2>
+                <p>- しいのみ日和</p>
+            </div>
+        </hgroup>
+    </section>
+    <section id="support">
+        <hgroup class="content-head">
+            <div class="head-wr">
+                <h2>しいのみ園の支援内容</h2>
+            </div>
+        </hgroup>
+        <ol class= "content-list">
+            <li>
+                <h3>施設入所支援事業</h3>
+                <p class="text">
+                    主に夜間生活において、入浴、排泄又は食事等の介護、その他の法基準の定める便宜を提供します。
+                </p>
+            </li>
+            <li>
+                <h3>生活介護事業</h3>
+                <p class="text">
+                    主として昼間において、自立した日常生活や社会生活を営むことができるように入浴、排せつ、食事等の介助支援と、生産活動、創作的活動等の機会を提供します。
+                </p>
+            </li>
+            <li>
+                <h3>短期入所事業</h3>
+                <p class="text">
+                    居宅において、その介護を行う方が疾患その他の理由により、短期間の入所利用等を必要とする方に入浴、排せつ、食事等の介護やその他支援の定める便宜を提供します。
+                </p>
+            </li>
+        </ol>
+    </section>
+    <section id="guide">
+        <hgroup class="content-head">
+            <div class="head-wr">
+                <h2>ご利用案内</h2>
+            </div>
+        </hgroup>
+        <div class="content-wr">
+            <p class="text">
+                ご利用をお考えの方は、在住市町村の福祉窓口および障害者総合支援センター・相談支援事業所「椎の実」にご相談ください。
+            </p>
+            <ol class="content-list">
+                <li>当事業所か相談支援事業所、在住市町村の福祉窓口に相談</li>
+                <li>障害支援区分認定調査</li>
+                <li>支給決定</li>
+                <li>受給者証の交付</li>
+                <li>上田しいのみ園と利用計画</li>
+                <li>上田しいのみ園利用開始</li>
+            </ol>
+            <p class="text">
+                ※上田市以外に在住の皆さんの利用については、在住市町村と上田市で協議してからの利用となります。
+            </p>
+            <p class="text">
+                ※相談支援事業所「椎の実」は以下のボタンから
+            </p>
+            <a href="" class="btn-1">椎の実ページへ</a>
+        </div>
+    </section>
+    <section id="policy">
+        <hgroup class="content-head">
+            <div class="head-wr">
+                <h2>運営基本方針</h2>
+            </div>
+        </hgroup>
+        <ul class="content-wr text">
+            <p>法人の基本理念に基づき、わたしたちは</p>
+            <li>安心、安全、快適な生活を提供し、一人ひとりのより満足できる支援に全力で取り組みます。</li>
+            <li>利用者一人ひとりの思いやりや夢を大事にして、その実現のために全力で個別支援をします。</li>
+            <li>福祉の基本理念に誠実な支援をします。</li>
+            <li>支援技術の向上のために常に全力で取り組みします。</li>
+            <li>生産活動を通じて働く意欲の向上のための個別の支援をします。</li>
+            <li>創作的活動や余暇的活動を通じて生活の豊かさのための支援をします。</li>
+            <li>地域住民との連携を深め、地域福祉の向上に積極的に取り組みます。</li>
+            <li>事業活動の透明性と健全かつ活力ある事業経営に全力で取り組みます。</li>
+        </ul>
+    </section>
+    <section id="fasility">
+        <hgroup class="content-head">
+            <div class="head-wr">
+                <h2>施設概要</h2>
+            </div>
+        </hgroup>
+        <table>
+	<tbody>
+		<tr>
+			<th></th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+    </section>
     <section id="fees"></section>
 </div>
 </main>
@@ -85,3 +302,5 @@ $og_image = '';
 <script src=""></script>
 </body>
 </html>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3211.419553030385!2d138.22277747639552!3d36.39904327236413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601da2db75d8c807%3A0xe6fd8f7d5ef695d3!2z5LiK55Sw44GX44GE44Gu44G_5ZyS!5e0!3m2!1sja!2sjp!4v1763109110905!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
