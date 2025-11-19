@@ -29,3 +29,7 @@ $og_image = '';
 <body>
 <?php include $base . '/header.php'; ?>
 <main>
+</main>
+<?php include $base . '/footer.php'; ?>
+</body>
+</html>

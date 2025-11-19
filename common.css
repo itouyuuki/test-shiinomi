@@ -12,6 +12,8 @@ body {
     font-family: 'M PLUS Rounded 1c','BIZ UDPGothic',sans-serif;
     background-color: #F7F4E9;
     color: var(--font-color);
+    max-width: 1200px;
+    margin: 60px auto;
 }
 
 body button {
@@ -198,40 +200,43 @@ header .btn-1::after {
     height: auto;
 }
 
-.head_nav #accordion_content.open .item_btn::after {
+.head_nav .accordion_content.open .item_btn::after {
     transform: rotate(180deg);
 }
 
-.head_nav #accordion_content .item_btn {
+.head_nav .accordion_content .item_btn {
     display: flex;
     align-items: center;
     gap: 4px;
     margin: 8px 10px;
     width: fit-content;
     font-size: 16px;
+    font-weight: 500;
+    color: var(--font-color);
+    font-family: 'M PLUS Rounded 1c', 'BIZ UDPGothic', sans-serif;
 }
 
-.head_nav #accordion_content #samebtn {
+.head_nav .accordion_content #samebtn {
     display: grid;
     grid-template-rows: 0fr;
     transition-property: grid-template-rows;
     transition-duration: 300ms;
 }
 
-.head_nav #accordion_content.open #samebtn {
+.head_nav .accordion_content.open #samebtn {
     grid-template-rows: 1fr;
 }
 
-.head_nav #accordion_content #samebtn .inner {
+.head_nav .accordion_content #samebtn .inner {
     overflow: hidden;
     padding-left: 0;
 }
 
-.head_nav #accordion_content #samebtn li {
+.head_nav .accordion_content #samebtn li {
     display: none;
 }
 
-.head_nav #accordion_content.open #samebtn li {
+.head_nav .accordion_content.open #samebtn li {
     display: block;
 }
 
@@ -289,7 +294,42 @@ header .btn-1::after {
         margin: 8px 10px;
     }
 
-    .head_nav #accordion_content .item_btn,.head_nav li a {
+    .head_nav li a {
         margin: 0;
     }
+
+    .head_nav .accordion_content {
+        position: relative;
+    }
+
+    .head_nav .accordion_content .item_btn {
+        margin: 0;
+    }
+
+    .head_nav .accordion_content #samebtn {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        width: 248px;
+        background-color: #e2f5ef;
+        margin: 0 0 0 auto;
+    }
+
+    .head_nav .accordion_content.open #samebtn .inner {
+        padding: 12px;
+    }
+
+    .head_nav #samebtn li a {
+        margin: 8px 0;
+    }
+}
+
+/************
+footer
+*************/
+footer .about {
+    width: min(100%,300px);
+    margin: 60px auto;
 }

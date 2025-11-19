@@ -10,7 +10,7 @@
     <nav class="menu">
     <ul class="head_nav">
         <li><a href="<?= $base ?>/">トップページ</a></li>
-        <li id="accordion_content">
+        <li class="accordion_content">
             <button class="item_btn">上田しいのみ会について</button>
             <div id="samebtn">
                 <ul class="inner">
@@ -19,7 +19,7 @@
                 </ul>
             </div>
         </li>
-        <li id="accordion_content">
+        <li class="accordion_content">
             <button class="item_btn">施設紹介</button>
             <div id="samebtn">
                 <ul class="inner">
