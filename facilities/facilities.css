@@ -17,13 +17,6 @@ body {
     margin: 36px auto;
 }
 
-.content .text {
-    font-family: 'BIZ UDPGothic',sans-serif;
-    line-height: 1.8;
-    font-weight: 400;
-    max-width: 40em;
-}
-
 .content .content-head {
     width: 100%;
     border-bottom: #E7E8E7 solid 2px;
@@ -334,6 +327,3 @@ body {
 /***********
 しいのみ園
 ************/
-.shiinomien {
-    --main-color: #9F2A00;
-}

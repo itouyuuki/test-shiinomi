@@ -67,6 +67,7 @@ body {
     font-family: var(--normal-font);
     background-color: var(--back-color);
     color: var(--font-color);
+    margin: 0;
 }
 
 main {
@@ -112,6 +113,18 @@ body a {
     background-size: contain;
 }
 
+.btn-2 {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main);
+    border-radius: 50px;
+    margin: 1em auto;
+    text-align: center;
+    width: 160px;
+    display: block;
+    padding: 10px 20px;
+}
+
 .bp {
     display: inline-block;
 }
@@ -120,8 +133,12 @@ body a {
     padding-left: 1.5em;
 }
 
-.content-list li {
-    list-style: none;
+.text {
+    font-family: var(--text-font);
+    line-height: 1.8;
+    font-weight: 400;
+    max-width: 40em;
+    font-size: clamp(16px, 3.5vw, 20px);
 }
 
 /********************
@@ -337,7 +354,7 @@ header .logo-img {
         flex-wrap: wrap;
         justify-content: right;
         align-items: center;
-        width: 70vw;
+        width: min(70vw, 840px);
     }
 
     .head_nav > li {
