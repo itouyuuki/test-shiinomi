@@ -5,4 +5,10 @@ view_btn.addEventListener("click", (e) => {
     dl.classList.toggle("open");
     
     view_btn.textContent = dl.classList.contains("open") ? "閉じる" : "もっと見る";
+
+    if(!dl.classList.contains("open")){
+        const ayumiTop = document.querySelector("#ayumi");
+
+        ayumiTop.scrollIntoView();
+    };
 });

@@ -48,6 +48,7 @@ $og_image = '';
         小さな芽が少しずつ伸びていくように、人も地域も支えながら育っていく。<br>
         そんな温もりを、ここから感じていただけたら嬉しいです。
     </p>
+    <a href="./blog/" class="btn-2">ブログ一覧を見る</a>
 </section>
 <section class="philosophy">
     <h2>法人理念・ご挨拶</h2>
@@ -81,7 +82,13 @@ $og_image = '';
         <li>
             <h3>ご挨拶</h3>
             <div class="greet-wr">
-                <img src="riji.jpg" class="riji" alt="">
+                <div class="riji">
+                    <img src="riji.jpg" alt="">
+                    <p>
+                        XXXX<br>
+                        <span class="highlight">XX XX</span>
+                    </p>
+                </div>
                 <p class="text">
                     1977年、肢体不自由のハンディキャップを持つ子どもたちの将来を案じたご家族の皆様を中心とした、長年にわたる社会福祉施設建設の運動が実を結び、「社会福祉法人上田しいのみ会」は認可、設立されました。<br>
                     以来、私たちは法人の理念のもと、時代とともに変化する福祉のニーズに応えながら、地域に根差した支援を続けてまいりました。<br>
@@ -93,7 +100,7 @@ $og_image = '';
         </li>
     </ul>
 </section>
-<section class="ayumi">
+<section id="ayumi">
     <h2>法人の歩み</h2>
     <dl id="ayumi-list">
         <div>
@@ -184,12 +191,6 @@ $og_image = '';
             </dd>
         </div>
         <div>
-            <dt>1977年</dt>
-            <dd class="text">
-                「社会福祉法人 上田しいのみ会」が厚生大臣より認可
-            </dd>
-        </div>
-        <div>
             <dt>2021年</dt>
             <dd class="text">
                 「陽だまりの家」事業廃止<br>
@@ -211,6 +212,14 @@ $og_image = '';
         </div>
     </dl>
     <button id="view-more" class="btn-2"><span>もっと見る</span></button>
+</section>
+<section class="corporate-info">
+    <h2>法人情報・運営について</h2>
+    <p class="text">
+        法人の運営に関する情報をまとめています。<br>
+        決算報告や組織体制、苦情への対応、個人情報保護方針などを公開し、透明性のある運営を心がけています。
+    </p>
+    <a href="./corporate-info/" class="btn-2">詳細はこちら</a>
 </section>
 </main>
 <?php include $base . '/footer.php'; ?>
