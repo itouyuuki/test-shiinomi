@@ -1,0 +1,458 @@
+main {
+    padding: 0;
+}
+
+/*******
+boxes-wr 
+********/
+
+.boxes-wr {
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 0 clamp(10px, 3vw, 20px);
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.boxes-wr h2 {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    font-size: clamp(24px, 5vw, 40px);
+    letter-spacing: 2px;
+}
+
+.boxes-wr .box {
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.boxes-wr .box img {
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.boxes-wr .box .text-box {
+    background-color: #fff;
+    padding: 0 10px clamp(16px, 3vw, 28px);
+}
+
+.boxes-wr .box .text-box .small-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.boxes-wr .box .text-box .title-wr {
+    display: flex;
+    justify-content: space-between;
+    margin: clamp(16px, 3vw, 28px) 0;
+}
+
+.boxes-wr .box .text-box .title-wr h3 {
+    font-size: clamp(24px, 4vw, 36px);
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.boxes-wr .box .text-box .title-wr .toggle{
+    background-color: #000;
+    width: 55px;
+    height:24px;
+}
+
+.boxes-wr .box .text-box .desc {
+    font-size: clamp(16px, 2vw, 20px);
+    font-family: var(--text-font);
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    margin: 16px 0 0;
+}
+
+.boxes-wr .box .text-box .small-title::before {
+    content: "";
+    border-radius: 100vh;
+    width: 10px;
+    height: 10px;
+}
+
+@media(min-width:1100px) {
+    .boxes-wr {
+        padding: 0 50px;
+        max-width: none;
+    }
+    .boxes-wr .box {
+        display: flex;
+    }
+    .boxes-wr .box img {
+        width: 480px;
+        max-height: none;
+    }
+    .boxes-wr .box .text-box {
+        padding: 0 20px 20px;
+    }
+}
+
+/*****************
+disability-support
+*****************/
+
+.disability-support {
+    border: 4px solid var(--main-color);
+}
+
+.disability-support h2 {
+    color: var(--sub-color);
+}
+
+.disability-support h2::before {
+    content: "";
+    background-color: var(--main-color);
+    border-radius: 100vh;
+    width: 16px;
+    height: 16px;
+}
+
+/*****************
+disability-support
+*****************/
+/**********
+shiinomien
+**********/
+
+.disability-support .shiinomien{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.disability-support .shiinomien img{
+    object-position: 50% 25%;
+}
+
+.disability-support .shiinomien .text-box{
+    border-top: 2px solid var(--main-color);
+}
+
+.disability-support .shiinomien .text-box .small-title::before{
+    background-color: var(--main-color);
+}
+
+@media(min-width:1100px) {
+    .disability-support .shiinomien {
+        border: 6px solid var(--main-color);
+    }
+    .disability-support .shiinomien .text-box{
+        border-top: none;
+        border-left: 6px solid var(--main-color);
+    }
+}
+
+/*****************
+disability-support
+*****************/
+/**********
+tsumuginoie
+**********/
+
+.disability-support .tsumuginoie{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.disability-support .tsumuginoie img{
+    object-position: 50% 70%;
+}
+
+.disability-support .tsumuginoie .text-box{
+    border-top: 2px solid var(--main-color);
+}
+
+.disability-support .tsumuginoie .text-box .small-title::before{
+    background-color: var(--main-color);
+}
+
+@media(min-width:1100px) {
+    .disability-support .tsumuginoie {
+        border: 6px solid var(--main-color);
+    }
+    .disability-support .tsumuginoie .text-box{
+        border-top: none;
+        border-left: 6px solid var(--main-color);
+    }
+}
+
+/*****************
+disability-support
+*****************/
+/**********
+ryogoen
+**********/
+
+.disability-support .ryogoen{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.disability-support .ryogoen img{
+    object-position: 50% 34%;
+}
+
+.disability-support .ryogoen .text-box{
+    border-top: 2px solid var(--main-color);
+}
+
+.disability-support .ryogoen .text-box .small-title::before{
+    background-color: var(--main-color);
+}
+
+@media(min-width:1100px) {
+    .disability-support .ryogoen {
+        border: 6px solid var(--main-color);
+    }
+    .disability-support .ryogoen .text-box{
+        border-top: none;
+        border-left: 6px solid var(--main-color);
+    }
+}
+
+/*****************
+disability-support
+*****************/
+/**********
+shiinomi
+**********/
+
+.disability-support .shiinomi{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.disability-support .shiinomi .text-box{
+    border-top: 2px solid var(--main-color);
+}
+
+.disability-support .shiinomi .text-box .small-title::before{
+    background-color: var(--main-color);
+}
+
+@media(min-width:1100px) {
+    .disability-support .shiinomi {
+        border: 6px solid var(--main-color);
+    }
+    .disability-support .shiinomi .text-box{
+        border-top: none;
+        border-left: 6px solid var(--main-color);
+    }
+}
+
+/************
+elderly-care
+************/
+
+.elderly-care {
+    border: 4px solid var(--main-color);
+}
+
+.elderly-care h2 {
+    color: var(--sub-color);
+}
+
+.elderly-care h2::before {
+    content: "";
+    background-color: var(--main-color);
+    border-radius: 100vh;
+    width: 16px;
+    height: 16px;
+}
+
+/************
+elderly-care
+*************/
+/*******
+muroganosato
+********/
+
+.elderly-care .muroganosato{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.elderly-care .muroganosato img{
+    object-position: 50% 43%;
+}
+
+.elderly-care .muroganosato .text-box{
+    border-top: 2px solid var(--main-color);
+}
+
+.elderly-care .muroganosato .text-box .small-title::before{
+    background-color: var(--main-color);
+}
+
+@media(min-width:1100px) {
+    .elderly-care .muroganosato{
+        border: 6px solid var(--main-color);
+    }
+    .elderly-care .muroganosato .text-box{
+        border-top: none;
+        border-left: 6px solid var(--main-color);
+    }
+}
+
+/************
+elderly-care
+*************/
+/*******
+day-service
+********/
+
+.elderly-care .day-service{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.elderly-care .day-service img{
+    object-position: 50% 72%;
+}
+
+.elderly-care .day-service .text-box{
+    border-top: 2px solid var(--main-color);
+}
+
+.elderly-care .day-service .text-box .small-title::before{
+    background-color: var(--main-color);
+}
+
+@media(min-width:1100px) {
+    .elderly-care .day-service{
+        border: 6px solid var(--main-color);
+    }
+    .elderly-care .day-service .text-box{
+        border-top: none;
+        border-left: 6px solid var(--main-color);
+    }
+}
+
+/************
+elderly-care
+*************/
+/*******
+ikiikikaigo
+********/
+
+.elderly-care .ikiikikaigo{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.elderly-care .ikiikikaigo img{
+    object-position: 50% 22%;
+}
+
+.elderly-care .ikiikikaigo .text-box{
+    border-top: 2px solid var(--main-color);
+}
+
+.elderly-care .ikiikikaigo .text-box .small-title::before{
+    background-color: var(--main-color);
+}
+
+@media(min-width:1100px) {
+    .elderly-care .ikiikikaigo{
+        border: 6px solid var(--main-color);
+    }
+    .elderly-care .ikiikikaigo .text-box{
+        border-top: none;
+        border-left: 6px solid var(--main-color);
+    }
+}
+
+/************
+consultation
+************/
+
+.consultation {
+    border: 4px solid var(--main-color);
+}
+
+.consultation h2 {
+    color: var(--sub-color);
+}
+
+.consultation h2::before {
+    content: "";
+    background-color: var(--main-color);
+    border-radius: 100vh;
+    width: 16px;
+    height: 16px;
+}
+
+/************
+consultation
+*************/
+/*******
+kawanishi
+********/
+
+.consultation .kawanishi{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.consultation .kawanishi img{
+    object-position: 50% 40%;
+}
+
+.consultation .kawanishi .text-box{
+    border-top: 2px solid var(--main-color);
+}
+
+.consultation .kawanishi .text-box .small-title::before{
+    background-color: var(--main-color);
+}
+
+@media(min-width:1100px) {
+    .consultation .kawanishi{
+        border: 6px solid var(--main-color);
+    }
+    .consultation .kawanishi .text-box{
+        border-top: none;
+        border-left: 6px solid var(--main-color);
+    }
+}
+
+/************
+consultation
+*************/
+/*******
+chiikihoukatsushien
+********/
+
+.consultation .chiikihoukatsushien{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.consultation .chiikihoukatsushien .text-box{
+    border-top: 2px solid var(--main-color);
+}
+
+.consultation .chiikihoukatsushien .text-box .small-title::before{
+    background-color: var(--main-color);
+}
+
+@media(min-width:1100px) {
+    .consultation .chiikihoukatsushien{
+        border: 6px solid var(--main-color);
+    }
+    .consultation .chiikihoukatsushien .text-box{
+        border-top: none;
+        border-left: 6px solid var(--main-color);
+    }
+}
