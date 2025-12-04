@@ -112,6 +112,25 @@ body a {
     background-size: contain;
 }
 
+.btn-2 {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main);
+    border-radius: 50px;
+    margin: 1em auto;
+    text-align: center;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.btn-2::after {
+    content:">";
+}
+
 .bp {
     display: inline-block;
 }
