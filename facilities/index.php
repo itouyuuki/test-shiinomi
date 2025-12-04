@@ -1,7 +1,7 @@
 <?php
 $base = '..';
 require_once $base . '/meta.php';
-$title = '施設紹介 | 上田しいのみ会';
+$title = '施設紹介';
 $description = '上田しいのみ会が運営する、障害福祉・高齢者福祉・相談支援の9施設を紹介します。施設一覧から詳細をご覧いただけます。';
 $local_path = '/facilities/'; // サイトのルートからのパスを記入
 $og_image = 'fv.jpg';
@@ -33,8 +33,8 @@ $og_image = 'fv.jpg';
     <h2>障がい者支援施設</h2>
     <ul>
         <li>
-            <a href="" class="box shiinomien">
-                <img src="../shiinomien.jpg" alt="">
+            <a href="/facilities/shiinomien/" class="box shiinomien">
+                <img width="1500" height="1000" src="../shiinomien.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">障がい者支援施設</p>
                     <div class="title-wr">
@@ -49,8 +49,8 @@ $og_image = 'fv.jpg';
             </a>
         </li>
         <li>
-            <a href="" class="box tsumuginoie">
-                <img src="../tsumuginoie.jpg" alt="">
+            <a href="/facilities/tsumuginoie/" class="box tsumuginoie">
+                <img width="1500" height="1012" src="../tsumuginoie.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">障がい者支援施設</p>
                     <div class="title-wr">
@@ -65,8 +65,8 @@ $og_image = 'fv.jpg';
             </a>
         </li>
         <li>
-            <a href="" class="box ryogoen">
-                <img src="../ryogoen.jpg" alt="">
+            <a href="/facilities/ryogoen/" class="box ryogoen">
+                <img width="1500" height="1012" src="../ryogoen.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">障がい者支援施設</p>
                     <div class="title-wr">
@@ -82,8 +82,8 @@ $og_image = 'fv.jpg';
             </a>
         </li>
         <li>
-            <a href="" class="box shiinomi">
-                <img src="../ryogoen.jpg" alt="">
+            <a href="/facilities/shiinomi/" class="box shiinomi">
+                <img width="1500" height="1012" src="../ryogoen.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">障がい者支援施設</p>
                     <div class="title-wr">
@@ -91,7 +91,7 @@ $og_image = 'fv.jpg';
                         <div class="toggle"></div>
                     </div>
                     <p class="desc">
-                        障がいのある方やご家族など、福祉サービスの利用えをお考えの方のお話しを伺い、一人ひとりに合った利用計画を作成します。
+                        障がいのある方やご家族など、福祉サービスの利用をお考えの方のお話しを伺い、一人ひとりに合った利用計画を作成します。
                     </p>
                 </div>
             </a>
@@ -102,8 +102,8 @@ $og_image = 'fv.jpg';
     <h2>高齢者福祉施設</h2>
     <ul>
         <li>
-            <a href="" class="box muroganosato">
-                <img src="../muroganosato.jpg" alt="">
+            <a href="/facilities/muroganosato/" class="box muroganosato">
+                <img width="1500" height="1012" src="../muroganosato.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">高齢者福祉施設</p>
                     <div class="title-wr">
@@ -119,8 +119,8 @@ $og_image = 'fv.jpg';
             </a>
         </li>
         <li>
-            <a href="" class="box day-service">
-                <img src="../day-service.jpg" alt="">
+            <a href="/facilities/day-service/" class="box day-service">
+                <img width="1500" height="981" src="../day-service.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">高齢者福祉施設</p>
                     <div class="title-wr">
@@ -138,8 +138,8 @@ $og_image = 'fv.jpg';
             </a>
         </li>
         <li>
-            <a href="" class="box ikiikikaigo">
-                <img src="../ikiikikaigo.jpg" alt="">
+            <a href="/facilities/ikiikikaigo/" class="box ikiikikaigo">
+                <img width="1500" height="1012" src="../ikiikikaigo.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">高齢者福祉施設</p>
                     <div class="title-wr">
@@ -158,8 +158,8 @@ $og_image = 'fv.jpg';
     <h2>相談</h2>
     <ul>
         <li>
-            <a href="" class="box kawanishi">
-                <img src="../kawanishi.jpg" alt="">
+            <a href="/facilities/kawanishi/" class="box kawanishi">
+                <img width="1500" height="1012" src="../kawanishi.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">相談</p>
                     <div class="title-wr">
@@ -173,8 +173,8 @@ $og_image = 'fv.jpg';
             </a>
         </li>
         <li>
-            <a href="" class="box chiikihoukatsushien">
-                <img src="../chiikihoukatsushien.jpg" alt="">
+            <a href="https://www.shiinomikai.com/khoukatsu/" class="box chiikihoukatsushien">
+                <img width="1500" height="1012" src="../chiikihoukatsushien.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">相談</p>
                     <div class="title-wr">
