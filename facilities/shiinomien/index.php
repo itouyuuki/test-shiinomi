@@ -24,13 +24,13 @@ $og_image = '';
 <meta property="og:description" content="<?= $description ?>">
 <meta property="og:image" content="<?= $site_url . $local_path . $og_image ?>">
 <link rel="stylesheet" href="<?= $base ?>/common.css?v=1">
-<link rel="stylesheet" href="<?= $facility_base ?>/facilities-low.css?v=1">
+<link rel="stylesheet" href="<?= $facility_base ?>/fac-low.css?v=1">
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="shiinomien">
 <?php include $base . '/header.php'; ?>
 <main class="navipage">
-<div class="fasility-navi">
+<div class="facility-navi">
     <ul class="navi">
         <li><a href="#news" class="btn-1">お知らせ</a></li>
         <li><a href="#blog" class="btn-1">ブログ</a></li>
@@ -41,7 +41,7 @@ $og_image = '';
         </a></li>
         <li><a href="#guide" class="btn-1">ご利用案内</a></li>
         <li><a href="#policy" class="btn-1">運営方針</a></li>
-        <li><a href="#fasility" class="btn-1">施設概要</a></li>
+        <li><a href="#facility" class="btn-1">施設概要</a></li>
         <li><a href="#fees" class="btn-1">ご利用料金</a></li>
     </ul>
 </div>
@@ -202,7 +202,7 @@ $og_image = '';
             <li>事業活動の透明性と健全かつ活力ある事業経営に全力で取り組みます。</li>
         </ul>
     </section>
-    <section id="fasility">
+    <section id="facility">
         <hgroup class="content-head">
             <div class="head-wr">
                 <h2>施設概要</h2>
