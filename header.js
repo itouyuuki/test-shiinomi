@@ -1,4 +1,5 @@
 const accordionBtns = document.querySelectorAll(".accordion_content");
+const isOpenMenu = false;
 
 accordionBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -6,14 +7,16 @@ accordionBtns.forEach((btn) => {
     
     accordionBtns.forEach((b) => b.classList.remove("open"));
     
-    if(!isOpen) {
+    if (!isOpen) {
       btn.classList.add("open");
     }
+    isOpenMenu = !isOpen;
   });
 });
 
 window.addEventListener("resize", () => {
-  if(window.matchMedia("(min-width: 768px)").matches) {
+  if (isOpenMenu && window.matchMedia("(min-width: 768px)").matches) {
     accordionBtns.forEach((b) => b.classList.remove("open"));
+    isOpenMenu = false;
   }
 });

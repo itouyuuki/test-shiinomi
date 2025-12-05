@@ -3,8 +3,8 @@ $base = '.';
 require_once $base . '/meta.php';
 $title = '';
 $description = '';
-$local_path = ''; // サイトのルートからのパスを記入
-$og_image = ''; 
+$local_path = '/'; // サイトのルートからのパスを記入
+$og_image = 'fv.jpg';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -16,10 +16,10 @@ $og_image = '';
 <meta name="description" content="<?= $description ?>">
 <link rel="icon" href="<?= $base . $favicon ?>">  
 <link rel="canonical" href="<?= $site_url . $local_path ?>">
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="<?= $site_name ?>">
 <meta property="og:url" content="<?= $site_url . $local_path ?>">
-<meta property="og:title" content="<?= $title ?>">
+<meta property="og:title" content="<?= "$title | $site_name" ?>">
 <meta property="og:description" content="<?= $description ?>">
 <meta property="og:image" content="<?= $site_url . $local_path . $og_image ?>">
 <link rel="stylesheet" href="<?= $base ?>/common.css?v=1">
