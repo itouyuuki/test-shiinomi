@@ -50,7 +50,7 @@ $og_image = 'fv.jpg';
         </li>
         <li>
             <a href="/facilities/tsumuginoie/" class="box tsumuginoie">
-                <img width="1500" height="1012" src="../tsumuginoie.jpg" alt="">
+                <img width="1500" height="1000" src="../tsumuginoie.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">障がい者支援施設</p>
                     <div class="title-wr">
@@ -66,7 +66,7 @@ $og_image = 'fv.jpg';
         </li>
         <li>
             <a href="/facilities/ryogoen/" class="box ryogoen">
-                <img width="1500" height="1012" src="../ryogoen.jpg" alt="">
+                <img width="1500" height="1000" src="../ryogoen.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">障がい者支援施設</p>
                     <div class="title-wr">
@@ -83,7 +83,7 @@ $og_image = 'fv.jpg';
         </li>
         <li>
             <a href="/facilities/shiinomi/" class="box shiinomi">
-                <img width="1500" height="1012" src="../ryogoen.jpg" alt="">
+                <img width="1500" height="1000" src="../ryogoen.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">障がい者支援施設</p>
                     <div class="title-wr">
@@ -103,7 +103,7 @@ $og_image = 'fv.jpg';
     <ul>
         <li>
             <a href="/facilities/muroganosato/" class="box muroganosato">
-                <img width="1500" height="1012" src="../muroganosato.jpg" alt="">
+                <img width="1500" height="1000" src="../muroganosato.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">高齢者福祉施設</p>
                     <div class="title-wr">
@@ -120,7 +120,7 @@ $og_image = 'fv.jpg';
         </li>
         <li>
             <a href="/facilities/day-service/" class="box day-service">
-                <img width="1500" height="981" src="../day-service.jpg" alt="">
+                <img width="1500" height="1000" src="../day-service.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">高齢者福祉施設</p>
                     <div class="title-wr">
@@ -139,7 +139,7 @@ $og_image = 'fv.jpg';
         </li>
         <li>
             <a href="/facilities/ikiikikaigo/" class="box ikiikikaigo">
-                <img width="1500" height="1012" src="../ikiikikaigo.jpg" alt="">
+                <img width="1500" height="1000" src="../ikiikikaigo.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">高齢者福祉施設</p>
                     <div class="title-wr">
@@ -159,7 +159,7 @@ $og_image = 'fv.jpg';
     <ul>
         <li>
             <a href="/facilities/kawanishi/" class="box kawanishi">
-                <img width="1500" height="1012" src="../kawanishi.jpg" alt="">
+                <img width="1500" height="1000" src="../kawanishi.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">相談</p>
                     <div class="title-wr">
@@ -174,7 +174,7 @@ $og_image = 'fv.jpg';
         </li>
         <li>
             <a href="https://www.shiinomikai.com/khoukatsu/" target="houkatsu" class="box chiikihoukatsushien">
-                <img width="1500" height="1012" src="../chiikihoukatsushien.jpg" alt="">
+                <img width="1500" height="1000" src="../chiikihoukatsushien.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">相談</p>
                     <div class="title-wr">

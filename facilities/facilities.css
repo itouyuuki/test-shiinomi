@@ -59,6 +59,7 @@ boxes-wr
 .boxes-wr ul li .box img {
     object-fit: cover;
     max-height: 300px;
+    aspect-ratio: 3/2;
 }
 
 .boxes-wr ul li .box .text-box {
