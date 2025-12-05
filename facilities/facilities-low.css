@@ -62,6 +62,10 @@ body {
     font-weight: 500;
 }
 
+.btn-2::after {
+    content:">";
+}
+
 /** ページ内ナビ **/
 .fasility-navi {
     display: none;
@@ -170,6 +174,7 @@ body {
 
 .fv .fv-content .fv-inner h2 {
     color: var(--main-color);
+    margin: 10px 0;
 }
 
 @media(min-width:920px){
@@ -196,6 +201,7 @@ body {
 /** news **/
 #news .news-wr h3 {
     font-size: clamp(20px,4vw,24px);
+    margin: 10px 0;
 }
 
 #news .news-wr .text {
@@ -375,9 +381,6 @@ body {
 }
 
 @media (max-width: 900px) {
-    .info-table {
-        width: 90%;
-    }
     .info-table tr {
         display: block;
         margin-bottom: 20px;
@@ -397,7 +400,7 @@ body {
 
     .info-table .employee td {
         display: block;
-        width: 90%;
+        
     }
 }
 
@@ -437,7 +440,7 @@ body {
     .fee-table th,
     .fee-table td {
         display: block; 
-        width: 97%;           
+        width: 100%;           
     }
 
     .fee-table th {
@@ -454,13 +457,8 @@ body {
 
 #fees .way {
     color: #9f2a00;
-    margin-bottom: 0;
+    margin-top: 16px;
 }
-
-#fees .way-inner {
-    margin-top: -16px;
-}
-
 
 /***********
 しいのみ園
