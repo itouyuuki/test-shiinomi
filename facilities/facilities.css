@@ -47,7 +47,7 @@ boxes-wr
 }
 
 .boxes-wr ul li {
-    display: contents;
+    display: flex;
 }
 
 .boxes-wr ul li .box {

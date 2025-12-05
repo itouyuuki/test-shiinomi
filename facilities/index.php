@@ -173,7 +173,7 @@ $og_image = 'fv.jpg';
             </a>
         </li>
         <li>
-            <a href="https://www.shiinomikai.com/khoukatsu/" class="box chiikihoukatsushien">
+            <a href="https://www.shiinomikai.com/khoukatsu/" target="houkatsu" class="box chiikihoukatsushien">
                 <img width="1500" height="1012" src="../chiikihoukatsushien.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">相談</p>
