@@ -172,6 +172,14 @@ body {
     color: var(--main-color);
 }
 
+@media(min-width:920px){
+    .fv .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+}
+
 @media(min-width:1024px){
     .fv .fv-content {
         display: flex;

@@ -24,7 +24,7 @@ $og_image = '';
 <meta property="og:description" content="<?= $description ?>">
 <meta property="og:image" content="<?= $site_url . $local_path . $og_image ?>">
 <link rel="stylesheet" href="<?= $base ?>/common.css?v=1">
-<link rel="stylesheet" href="<?= $facility_base ?>/facilities.css?v=1">
+<link rel="stylesheet" href="<?= $facility_base ?>/facilities-low.css?v=1">
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="shiinomien">
