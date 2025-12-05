@@ -1,3 +1,8 @@
+
+body {
+    background-color: #F7F4E9;
+}
+
 :root {
     --main: #008655;
     --font-color: #3F342D;
@@ -75,6 +80,13 @@ main {
     padding: 0 18px;
 }
 
+@media(min-width:750px){
+    .navipage {
+        display: flex;
+        gap: 32px;
+    }
+}
+
 body button {
     border: none;
     background-color: unset;
@@ -110,6 +122,30 @@ body a {
     width: 24px;
     aspect-ratio: 1;
     background-size: contain;
+}
+
+.btn-2 {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 1em auto;
+    padding: 1em;
+    padding-left: 40px;
+    max-width:330px;
+    font-size: clamp(16px, 3.5vw, 20px);
+    color: white;
+    background-color: #008655;
+    border-radius: 50px;
+}
+
+.btn-2::after {
+    display: block;
+    content: "";
+    background: url(btn-arrow.svg) no-repeat;
+    width: 16px;
+    aspect-ratio: 1;
+    background-size: contain;
+    margin-left: auto;
 }
 
 .bp {

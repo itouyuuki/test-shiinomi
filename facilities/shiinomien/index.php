@@ -29,7 +29,7 @@ $og_image = '';
 </head>
 <body class="shiinomien">
 <?php include $base . '/header.php'; ?>
-<main>
+<main class="navipage">
 <div class="fasility-navi">
     <ul class="navi">
         <li><a href="#news" class="btn-1">お知らせ</a></li>
@@ -100,7 +100,19 @@ $og_image = '';
                     日中は籠作りやプラスチック製品の箱詰め、清拭布たたみなどに取り組みます。<br>
                     午後はヨガや書道などで自分の時間も楽しみ、笑顔あふれる穏やかな毎日を過ごしています。
                 </p>
-                <a href="" class="btn-1">日課を見る</a>
+                <input type="checkbox" id="popup">
+                <label class="btn-2" for="popup">日課を見る</label>
+                <div class="popup-overlay">
+                    <div class="popup-window">
+                        <img src="dairylist.png" alt="">
+                        <label class="popup-close" for="popup">
+                            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="images">
@@ -169,7 +181,7 @@ $og_image = '';
             <p class="text">
                 ※相談支援事業所「椎の実」は以下のボタンから
             </p>
-            <a href="" class="btn-1">椎の実ページへ</a>
+            <a href="<?= $base ?>/facilities/shiinomi/" class="btn-2">椎の実ページへ</a>
         </div>
     </section>
     <section id="policy">
@@ -196,106 +208,134 @@ $og_image = '';
                 <h2>施設概要</h2>
             </div>
         </hgroup>
-        <table>
-	<tbody>
-		<tr>
-			<th></th>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td></td>
-			<td></td>
-		</tr>
-	</tbody>
-</table>
+        <img src="shiinomien.jpg" alt="" class="building">
+        <table class="info-table">
+	    <tbody>
+            <tr>
+                <th>指定事業所名</th>
+                <td colspan="2">上田しいのみ園</td>
+            </tr>
+            <tr>
+                <th>所在地</th>
+                <td colspan="2">上田市中之条801番地</td>
+            </tr>
+            <tr>
+                <th>連絡先</th>
+                <td colspan="2">（TEL）0268-27-3166　（FAX）0268-27-3175</td>
+            </tr>
+            <tr>
+                <th>指定事業所コード</th>
+                <td colspan="2">2010300289</td>
+            </tr>
+            <tr>
+                <th>相談支援事業</th>
+                <td colspan="2">2030300061</td>
+            </tr>
+            <tr>
+                <th>事業開始年月日</th>
+                <td colspan="2">昭和53年4月1日</td>
+            </tr>
+            <tr>
+                <th>利用定員</th>
+                <td colspan="2"> (施設入所支援)　40名　　(生活介護)　40名　 (短期入所)　2名　</td>
+            </tr>
+            <tr>
+                <th>敷地面積</th>
+                <td colspan="2">3,423.09㎡</td>
+            </tr>
+            <tr>
+                <th>延床面積</th>
+                <td colspan="2">1,632.97㎡</td>
+            </tr>
+            <tr>
+                <th>鉄筋平屋建1棟</th>
+                <td colspan="2">住居棟全床暖房</td>
+            </tr>
+            <tr>
+                <th>特殊付帯設備</th>
+                <td colspan="2">暖房設備、居住棟床暖房、スプリンクラーその他ファンコンベクター25台</td>
+            </tr>
+            <tr>
+                <th class="category" rowspan="10">職員体制</th>
+                <td class="title">施設長</td>
+                <td class="inner">1名</td>
+            </tr>
+            <tr>
+                <td class="title">ｻｰﾋﾞｽ管理責任者</td>
+                <td class="inner">2名（1名兼務）</td>
+            </tr>
+            <tr>
+                <td class="title">医師</td>
+                <td class="inner">2名（非常勤）</td>
+            </tr>
+            <tr>
+                <td class="title">看護師</td>
+                <td class="inner">3名</td>
+            </tr>
+            <tr>
+                <td class="title">理学療法士</td>
+                <td class="inner">1名</td>
+            </tr>
+            <tr>
+                <td class="title">生活指導員</td>
+                <td class="inner">23名（ﾊﾟｰﾄ6名含む）（うち介護福祉士16名）</td>
+            </tr>
+            <tr>
+                <td class="title">管理栄養士</td>
+                <td class="inner">1名</td>
+            </tr>
+            <tr>
+                <td class="title">調理師</td>
+                <td class="inner">5名</td>
+            </tr>
+            <tr>
+                <td class="title">事務職員</td>
+                <td class="inner">2名</td>
+            </tr>
+            <tr>
+                <td class="title">合計</td>
+                <td class="inner">27名</td>
+            </tr>
+        </tbody>
+        </table>
     </section>
-    <section id="fees"></section>
+    <section id="fees">
+        <hgroup class="content-head">
+            <div class="head-wr">
+            <h2>ご利用料金</h2>
+            </div>
+        </hgroup>
+
+        <div class="fee-table">
+            <table>
+            <tr>
+                <th class="category" rowspan="3">生活費</th>
+                <td class="title">食費</td>
+                <td class="inner">1日1,428円</td>
+            </tr>
+            <tr>
+                <td class="title">光熱費</td>
+                <td>1日394円</td>
+            </tr>
+            <tr>
+                <td class="title">その他</td>
+                <td class="inner">サービス利用料金の利用者負担額</td>
+            </tr>
+            <tr>
+                <th class="category">その他の費用</th>
+                <td colspan="2" class="inner">
+                理容料金、医療費、行政手続き等、介護給付費等の給付対象外のサービスを利用した場合は、別途のお支払いになります。
+                </td>
+            </tr>
+            </table>
+            <p class="way">※お支払方法<p>
+            <p class="way-inner">
+            毎月10日までに前月分の請求を致しますので、当月の20日までにお支払下さい。<br>
+            お支払方法は、現金もしくは銀行振込の中からご契約の際に選べます。受領後は領収書を発行します。
+            </p>
+        </div>
+    </section>
+
 </div>
 </main>
 <?php include $base . '/footer.php'; ?>

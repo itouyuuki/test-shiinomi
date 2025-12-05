@@ -52,7 +52,7 @@ body {
 
 .content img {
     width: min(100%,420px);
-    margin: 0 auto;
+    margin: 0;
     border-radius: 20px;
     display: block;
 }
@@ -60,13 +60,6 @@ body {
 .content h1,.content h2,.content h3 {
     color: var(--main-color);
     font-weight: 500;
-}
-
-@media(min-width:750px){
-    main {
-        display: flex;
-        gap: 32px;
-    }
 }
 
 /** ページ内ナビ **/
@@ -179,15 +172,16 @@ body {
     color: var(--main-color);
 }
 
-@media(min-width:640px){
+@media(min-width:1024px){
     .fv .fv-content {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 16px;
     }
     
     .fv .fv-content img{
         width: min(50%,420px);   
+        margin-block-start: 1.5em;
     }
 }
 
@@ -219,10 +213,24 @@ body {
     margin: 0;
 }
 
-@media(min-width:640px){
+/* ポップアップ背景 */
+.popup {
+  display: none; /* 初期は非表示 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+@media(min-width:1024px){
     #news .content-inner {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 16px;
     }
     
@@ -297,13 +305,6 @@ body {
     display: flex;
     align-items: center;
 }
-
-#guide .btn-1 {
-    margin: 1em auto;
-    width: fit-content;
-    font-size: clamp(16px, 3.5vw, 20px);
-}
-
 @media(min-width:640px){
     .content .content-wr {
         margin: 16px;
@@ -312,13 +313,202 @@ body {
 
 /** policy **/
 #policy ul {
-    padding-left: 1em;
+    padding-left: 0em;
+    font-size: clamp(16px, 3.5vw, 20px); 
 }
 
 #policy ul p {
-    margin: 0;
+    margin: 0; 
 }
+
+/** facility **/
+#facility p {
+    font-size: clamp(16px, 3.5vw, 20px);
+}
+
+.info-table {
+    width: 100%;
+    max-width: 880px;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* 行間 */
+    margin-top: 8px;
+    font-size: clamp(16px, 3.5vw, 20px); 
+}
+
+.info-table th {
+    background: #8a2100;
+    color: #fff;
+    padding: 14px 20px;
+    width: 180px; /* 左幅固定（調整OK） */
+    text-align: center;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.info-table td {
+    position: relative;
+    background: #fff;
+    padding: 14px 20px;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 1px 5px -2px #9f2a00;
+}
+
+.info-table td::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 99%;
+    height: 0.5px;   
+    background-color: #9f2a00;
+}
+
+@media (max-width: 900px) {
+    .info-table {
+        width: 90%;
+    }
+    .info-table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .info-table th{
+        display: block;
+        width: 100%;
+        border-top-right-radius: 5px;
+    }
+
+    .info-table td {
+        display: block;
+        width: 100%;
+        border-top-right-radius: 5px;
+    }
+
+    .info-table .employee td {
+        display: block;
+        width: 90%;
+    }
+}
+
+.fee-table table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: clamp(16px, 3.5vw, 20px); 
+}
+
+.fee-table th {
+    background: #8a2100;
+    color: #fff;
+    padding: 14px 20px;
+    width: 180px; /* 左幅固定（調整OK） */
+    text-align: center;
+    font-weight: bold;
+    border-right: 3px solid #8a2100;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.fee-table td {
+    position: relative;
+    background: #fff;
+    padding: 14px 20px;
+    border-left: none;
+    border: 1px solid #9f2a00;
+}
+
+.fee-table .title {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    .fee-table table,
+    .fee-table tr,
+    .fee-table th,
+    .fee-table td {
+        display: block; 
+        width: 97%;           
+    }
+
+    .fee-table th {
+        margin-top: 16px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+        border-bottom: 1px solid #fff
+    }
+}
+
+#fees p {
+    font-size: clamp(16px, 3.5vw, 20px); 
+}
+
+#fees .way {
+    color: #9f2a00;
+    margin-bottom: 0;
+}
+
+#fees .way-inner {
+    margin-top: -16px;
+}
+
 
 /***********
 しいのみ園
 ************/
+
+#popup {
+    display: none; /* label でコントロールするので input は非表示に */
+}
+
+.popup-open {
+    cursor: pointer; /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
+}
+
+.popup-overlay {
+    display: none; /* input にチェックが入るまでは非表示に */
+}
+
+#popup:checked ~ .popup-overlay {
+    display: block;
+    z-index: 99999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.popup-window {
+    width: 80vw;
+    max-width: 470px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#news .content-inner .popup-window img {
+    width: 90%;
+    display: block;
+    border-radius: 4px; /* optional */
+    margin: auto;
+}
+
+.popup-close {
+    cursor: pointer;
+    position: absolute;
+    top: -26px;
+    right: 0;
+}
+
+@media screen (min-width:1024px) {
+    #news .content-inner .popup-window img {
+    width: 470px;
+}
+}
