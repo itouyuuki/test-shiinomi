@@ -1,5 +1,5 @@
 main {
-    padding: 0;
+    padding: 0 clamp(10px, 2vw, 50px);
 }
 
 a {
@@ -38,6 +38,7 @@ boxes-wr
     align-items: center;
     font-size: clamp(24px, 5vw, 40px);
     letter-spacing: 2px;
+    margin: 30px 0;
 }
 
 .boxes-wr ul {
@@ -73,6 +74,7 @@ boxes-wr
     font-size: clamp(16px, 3vw, 20px);
     font-weight: bold;
     letter-spacing: 1px;
+    margin: 20px 0;
 }
 
 .boxes-wr ul li .box .text-box .title-wr {
@@ -114,13 +116,13 @@ boxes-wr
 
 @media(min-width:700px) {
     .boxes-wr {
-    max-width: 810px;
+    max-width: 830px;
 }
 }
 
 @media(min-width:1100px) {
     .boxes-wr {
-        padding: 30px 50px;
+        padding: 0 50px 30px;
         max-width: none;
     }
     .boxes-wr ul{
@@ -390,6 +392,9 @@ day-service
         border-top: none;
         border-left: 6px solid var(--main-color);
     }
+    .elderly-care ul li .day-service .text-box .title-wr h3 span{
+    font-size: 32px;
+}
 }
 
 /************
