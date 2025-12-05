@@ -121,8 +121,15 @@ body a {
     margin: 1em auto;
     text-align: center;
     width: 160px;
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 10px 20px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.btn-2::after {
+    content:">";
 }
 
 .bp {
