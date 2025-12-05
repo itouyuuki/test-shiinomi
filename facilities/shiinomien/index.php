@@ -261,7 +261,7 @@ $og_image = '';
                 <td class="inner">1名</td>
             </tr>
             <tr>
-                <td class="title">ｻｰﾋﾞｽ管理責任者</td>
+                <td class="title">サービス管理責任者</td>
                 <td class="inner">2名（1名兼務）</td>
             </tr>
             <tr>
@@ -278,7 +278,7 @@ $og_image = '';
             </tr>
             <tr>
                 <td class="title">生活指導員</td>
-                <td class="inner">23名（ﾊﾟｰﾄ6名含む）（うち介護福祉士16名）</td>
+                <td class="inner">23名（パート6名含む）（うち介護福祉士16名）</td>
             </tr>
             <tr>
                 <td class="title">管理栄養士</td>
