@@ -3,9 +3,9 @@ $base = '../..';
 $facility_base ='..';
 require_once $base . '/meta.php';
 $title = '上田しいのみ園＿施設紹介';
-$description = '障害者支援施設上田しいのみ園〒386-0034上田市中之条801番地TEL:0268-27-3166FAX:0268-27-3175当施設は社会福祉法（障害者自立支援法）に基づく「障害者支援施設」です。障害のある大人の方に施設入所支援を行うとともに、通所・短期入所等を利用していただく施設です。';
+$description = '上田しいのみ会は、障がいのある方や高齢の方が、地域の中で安心して暮らせるように支援する社会福祉法人です。９つの施設で構成されており、地域やボランティアの方々と共に、あたたかく開かれた福祉活動を続けています。';
 $local_path = '/facilities/shiinomien/'; // サイトのルートからのパスを記入
-$og_image = ''; 
+$og_image = 'fv.jpg'; 
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -54,7 +54,7 @@ $og_image = '';
             <li><a href="#support" class="btn-1">しいのみ園の支援内容</a></li>
             <li><a href="#guide" class="btn-1">ご利用案内</a></li>
             <li><a href="#policy" class="btn-1">運営方針</a></li>
-            <li><a href="#fasility" class="btn-1">施設概要</a></li>
+            <li><a href="#facility" class="btn-1">施設概要</a></li>
             <li><a href="#fees" class="btn-1">ご利用料金</a></li>
         </ul>
     </details>
@@ -67,7 +67,7 @@ $og_image = '';
             <p class="access">
                 〒386-0034<br>
                 上田市中之条801番地<br>
-                <span class="highlight">TEL</span>:0268-27-3166　<span class="bp"><span class="highlight">FAX</span>:0268-27-3175</span>
+                <span class="highlight">TEL</span><a class="call" href="tel:0268-27-3166">:0268-27-3166</a>　<span class="bp"><span class="highlight">FAX</span>:0268-27-3175</span>
             </p>
         </div>
         <div class="fv-content">
@@ -191,15 +191,15 @@ $og_image = '';
             </div>
         </hgroup>
         <ul class="content-wr text">
-            <p>法人の基本理念に基づき、わたしたちは</p>
-            <li>安心、安全、快適な生活を提供し、一人ひとりのより満足できる支援に全力で取り組みます。</li>
-            <li>利用者一人ひとりの思いやりや夢を大事にして、その実現のために全力で個別支援をします。</li>
-            <li>福祉の基本理念に誠実な支援をします。</li>
-            <li>支援技術の向上のために常に全力で取り組みします。</li>
-            <li>生産活動を通じて働く意欲の向上のための個別の支援をします。</li>
-            <li>創作的活動や余暇的活動を通じて生活の豊かさのための支援をします。</li>
-            <li>地域住民との連携を深め、地域福祉の向上に積極的に取り組みます。</li>
-            <li>事業活動の透明性と健全かつ活力ある事業経営に全力で取り組みます。</li>
+            <li>法人の基本理念に基づき、わたしたちは</li>
+            <li class="ten">安心、安全、快適な生活を提供し、一人ひとりのより満足できる支援に全力で取り組みます。</li>
+            <li class="ten">利用者一人ひとりの思いやりや夢を大事にして、その実現のために全力で個別支援をします。</li>
+            <li class="ten">福祉の基本理念に誠実な支援をします。</li>
+            <li class="ten">支援技術の向上のために常に全力で取り組みます。</li>
+            <li class="ten">生産活動を通じて働く意欲の向上のための個別の支援をします。</li>
+            <li class="ten">創作的活動や余暇的活動を通じて生活の豊かさのための支援をします。</li>
+            <li class="ten">地域住民との連携を深め、地域福祉の向上に積極的に取り組みます。</li>
+            <li class="ten">事業活動の透明性と健全かつ活力ある事業経営に全力で取り組みます。</li>
         </ul>
     </section>
     <section id="facility">
@@ -257,7 +257,7 @@ $og_image = '';
             </tr>
             <tr>
                 <th class="category" rowspan="10">職員体制</th>
-                <td class="title">施設長</td>
+                <td>施設長</td>
                 <td class="inner">1名</td>
             </tr>
             <tr>
@@ -335,12 +335,8 @@ $og_image = '';
             </p>
         </div>
     </section>
-
 </div>
 </main>
 <?php include $base . '/footer.php'; ?>
-<script src=""></script>
 </body>
 </html>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3211.419553030385!2d138.22277747639552!3d36.39904327236413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601da2db75d8c807%3A0xe6fd8f7d5ef695d3!2z5LiK55Sw44GX44GE44Gu44G_5ZyS!5e0!3m2!1sja!2sjp!4v1763109110905!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

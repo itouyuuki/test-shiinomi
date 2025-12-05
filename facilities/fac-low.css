@@ -91,9 +91,21 @@ body {
     color: var(--main-color);
 }
 
+.fv .inner .access .call {
+    color: #3f342d;
+    text-decoration: none;
+    display: inline;
+}
+
 .fv .fv-content .fv-inner h2 {
     color: var(--main-color);
     margin: 10px 0;
+}
+
+@media(min-width:750px){
+    .content .fv {
+    margin: 0 auto;
+}
 }
 
 @media(min-width:920px){
@@ -259,7 +271,7 @@ body {
     margin: 0; 
 }
 
-#policy ul li::before {
+#policy ul .ten::before {
     content: "・";
 }
 
@@ -280,22 +292,25 @@ body {
 .info-table th {
     background: #8a2100;
     color: #fff;
-    padding: 14px 20px;
+    padding: 4px 20px;
+    width: 180px; /* 左幅固定 */
     text-align: center;
     font-weight: bold;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     display: block;
+    width: 100%;
 }
 
 .info-table td {
     position: relative;
     background: #fff;
-    padding: 14px 20px;
+    padding: 6px 20px;
     border-left: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: 0px 1px 5px -2px #9f2a00;
+    display: block;
 }
 
 .info-table td::after {
@@ -308,26 +323,29 @@ body {
     background-color: #9f2a00;
 }
 
-@media (max-width: 900px) {
+.info-table .title {
+    margin-top: -8px;
+}
+
+@media (min-width: 900px) {
     .info-table tr {
-        display: block;
-        margin-bottom: 20px;
+        display: table-row;
+        margin-bottom: 0;
     }
 
-    .info-table th{
+    .info-table th {
+        display: table-cell;
         width: 180px;
-        border-bottom-left-radius: 5px;
-        border-top-right-radius: 0;
+        border-radius: 5px 0 0 5px;
+        padding: 14px 20px;
+        margin-top: 0;
     }
 
     .info-table td {
-        display: block;
-        width: 100%;
-        border-top-right-radius: 5px;
-    }
-
-    .info-table .employee td {
-        display: block;
+        display: table-cell;
+        border-radius: 0 5px 5px 0;
+        padding: 14px 20px;
+        width: 200px;
     }
 }
 
@@ -341,7 +359,7 @@ body {
     background: #8a2100;
     color: #fff;
     padding: 14px 20px;
-    width: 180px; /* 左幅固定（調整OK） */
+    width: 180px; 
     text-align: center;
     font-weight: bold;
     border-right: 3px solid #8a2100;
@@ -361,20 +379,43 @@ body {
     font-weight: bold;
 }
 
-@media screen and (max-width: 900px) {
-    .fee-table table,
-    .fee-table tr,
-    .fee-table th,
-    .fee-table td {
-        display: block; 
-        width: 100%;           
+.fee-table table,
+.fee-table tr,
+.fee-table th,
+.fee-table td {
+    display: block;
+    box-sizing: border-box;
+}
+
+.fee-table th {
+    margin-top: 8px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    .fee-table table {
+        display: table;
+    }
+
+    .fee-table tr {
+        display: table-row;
     }
 
     .fee-table th {
-        margin-top: 16px;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 5px;
-        border-bottom: 1px solid #fff
+        display: table-cell;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+        border-bottom: none;
+        margin-top: 0;
+        width: 180px;
+    }
+
+    .fee-table td {
+        display: table-cell;
     }
 }
 

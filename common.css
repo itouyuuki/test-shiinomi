@@ -156,9 +156,8 @@ main {
         min-width: 240px;
         position: sticky;
         height: fit-content;
-        top: 16px;
+        top: 90px;
         flex-grow: 1;
-        
     }
 
     .content details {
