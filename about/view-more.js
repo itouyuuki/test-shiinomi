@@ -1,14 +1,12 @@
-const view_btn = document.querySelector("#view-more");
+const view_btn = document.getElementById("view-more");
 
 view_btn.addEventListener("click", (e) => {
-    const dl = document.querySelector("#ayumi-list");
-    dl.classList.toggle("open");
+    const section = document.getElementById("ayumi");
+    section.classList.toggle("open");
     
-    view_btn.textContent = dl.classList.contains("open") ? "閉じる" : "もっと見る";
+    view_btn.textContent = section.classList.contains("open") ? "閉じる" : "もっと見る";
 
-    if(!dl.classList.contains("open")){
-        const ayumiTop = document.querySelector("#ayumi");
-
-        ayumiTop.scrollIntoView();
+    if(!section.classList.contains("open")){    
+        section.scrollIntoView();
     };
 });

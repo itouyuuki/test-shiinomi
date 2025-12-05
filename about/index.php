@@ -4,7 +4,7 @@ require_once $base . '/meta.php';
 $title = '上田しいのみ園について';
 $description = '上田しいのみ会の法人理念や沿革、名前の由来などをご紹介します。組織体制や決算報告などの情報開示についても、こちらのページをご覧ください。';
 $local_path = '/about/'; // サイトのルートからのパスを記入
-$og_image = ''; 
+$og_image = 'shiinoki.jpg'; 
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -34,7 +34,7 @@ $og_image = '';
     <div class="about-wr">
         <img src="shiinoki.jpg" alt="">
         <p class="text">
-            しいのみ会のシンボルツリーである『<ruby>椎<rp>(</rp><rt>しい</rt><rp>)</rp></ruby>の木』は、上田しいのみ園の玄関前に2本並んで立っています。しいのみ会のシンボルツリーである『<ruby>椎<rp>(</rp><rt>しい</rt><rp>)</rp></ruby>の木』は、上田しいのみ園の玄関前に2本並んで立っています。上田しいのみ会という法人名は、椎の木の持つ、強くたくましい生命力にちなんで名づけられました。<br>
+            しいのみ会のシンボルツリーである『<ruby>椎<rp>(</rp><rt>しい</rt><rp>)</rp></ruby>の木』は、上田しいのみ園の玄関前に2本並んで立っています。上田しいのみ会という法人名は、椎の木の持つ、強くたくましい生命力にちなんで名づけられました。<br>
             1988年、初代理事長が新潟県の弥彦神社から分けていただいた若木は、今では立派に根を張り、訪れる人をあたたかく迎えています。<br>
             地域に根差し、人々がどんな困難にも負けずに生きていけるように――そんな願いが、この2本の椎の木に込められています。
         </p>
@@ -85,8 +85,8 @@ $og_image = '';
                 <div class="riji">
                     <img src="riji.jpg" alt="">
                     <p>
-                        XXXX<br>
-                        <span class="highlight">XX XX</span>
+                        理事長<br>
+                        <span class="highlight">村上恒夫</span>
                     </p>
                 </div>
                 <p class="text">
@@ -112,7 +112,7 @@ $og_image = '';
         <div>
             <dt>1978年</dt>
             <dd class="text">
-                「重度身体障害者授産施設「上田しいのみ園」開設
+                重度身体障害者授産施設「上田しいのみ園」開設
             </dd>
         </div>
         <div>
