@@ -10,6 +10,8 @@
     --back-color: #F7F4E9;
     --normal-font: 'M PLUS Rounded 1c','BIZ UDPGothic',sans-serif;
     --text-font: 'BIZ UDPGothic',sans-serif;
+    --fv-image: url(fv.jpg);
+    --fv-sub-image: url(ogp.jpg);
 }
 
 .shiinomien {
@@ -63,7 +65,6 @@
     --sub-color: #AF4831;
 }
 
-
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
@@ -78,7 +79,6 @@ body {
 main {
     max-width: 1200px;
     margin: 100px auto;
-    padding: 0 18px;
 }
 
 body button {
@@ -242,7 +242,8 @@ header .logo-img {
     top: 0;
     right: 0;
     width: 100%;
-    height: 100vh;    
+    height: 100vh;
+       
     overflow-y: scroll;
     background: #e2f5ef;
     flex: 3;
@@ -526,5 +527,88 @@ footer .copyright {
     footer .policy {
         grid-area: c;
         margin: auto auto 0 0;
+    }
+}
+
+
+/************************
+
+FV
+
+************************/
+
+.fv {
+    position: relative;
+    margin-top: -70px;
+}
+
+.fv .image {
+    height: calc(100vh - 70px);
+    max-height: 400px;
+    width: 100%;
+    background: linear-gradient(240.75deg, rgba(5, 188, 121, 0) 1.85%, rgba(5, 188, 121, 0) 67.44%, #05BC79 100%), var(--fv-image, var(--fv-sub-image));
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+}
+
+.fv .fv-content {
+    width: 96%;
+    margin: -80px auto 0;
+}
+
+.fv .fv-content h1 {
+    font-size: clamp(2.25rem, 1rem + 2vw, 2.5rem);
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0 1px 4px rgb(0 39 23 / 1);
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+.fv .fv-content .box {
+    margin-top: 60px;
+}
+
+.fv .fv-content p {
+    font-size: clamp(1rem, 1rem + 1vw, 1.1rem);
+    font-weight: 500;
+    font-family: var(--text-font);
+    letter-spacing: 2px;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+
+@media (min-width:650px) {
+    .fv .image {
+        max-height: 600px;
+    }
+}
+
+@media (min-width:768px) {
+    .fv .image {
+        background: linear-gradient(120deg, rgba(5, 188, 121, 0) 20%, rgba(5, 188, 121, 0) 40%, #05BC79 100%), var(--fv-image, var(--fv-sub-image));
+        background-repeat: no-repeat, no-repeat;
+        background-size: cover, cover;
+        background-position: center, center;
+    }
+
+    .fv .fv-content {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        max-width: 600px;
+        color: #ffffff;
+        text-shadow: 0 1px 4px rgb(0 39 23 / 1);
+    }
+
+    .fv .fv-content .box {
+        margin: 0;
+    }
+
+    .fv .fv-content p {
+        margin-top: 10px;
     }
 }
