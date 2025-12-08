@@ -3,8 +3,7 @@ $base = '.';
 require_once $base . '/meta.php';
 $title = '';
 $description = '';
-$local_path = '/';
-    // サイトのルートからのパスを記入
+$local_path = '/';// サイトのルートからのパスを記入
 $og_image = 'fv.jpg';
 ?>
 <!DOCTYPE html>
@@ -28,10 +27,10 @@ $og_image = 'fv.jpg';
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<?php include $base . '/header.php';?>
+<?php include $base . '/header.php'; ?>
 <main>
-<?php include $base . '/fv.php';?>
+<?php include $base . '/fv.php'; ?>
 </main>
-<?php include $base . '/footer.php';?>
+<?php include $base . '/footer.php'; ?>
 </body>
 </html>

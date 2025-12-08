@@ -3,8 +3,7 @@ $base = '..';
 require_once $base . '/meta.php';
 $title = '施設紹介';
 $description = '上田しいのみ会が運営する、障害福祉・高齢者福祉・相談支援の9施設を紹介します。施設一覧から詳細をご覧いただけます。';
-$local_path = '/facilities/';
-    // サイトのルートからのパスを記入
+$local_path = '/facilities/';// サイトのルートからのパスを記入
 $og_image = 'fv.jpg';
 ?>
 <!DOCTYPE html>
@@ -15,7 +14,7 @@ $og_image = 'fv.jpg';
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= "$title | $site_name" ?></title>
 <meta name="description" content="<?= $description ?>">
-<link rel="icon" href="<?= $base . $favicon ?>">  
+<link rel="icon" href="<?= $base . $favicon ?>">
 <link rel="canonical" href="<?= $site_url . $local_path ?>">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="<?= $site_name ?>">
@@ -28,8 +27,7 @@ $og_image = 'fv.jpg';
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<?php include $base . '/header.php';
-    ?>
+<?php include $base . '/header.php';?>
 <main>
 <section class="boxes-wr disability-support">
     <h2>障がい者支援施設</h2>
@@ -192,7 +190,6 @@ $og_image = 'fv.jpg';
     </ul>
 </section>
 </main>
-<?php include $base . '/footer.php';
-    ?>
+<?php include $base . '/footer.php';?>
 </body>
 </html>
