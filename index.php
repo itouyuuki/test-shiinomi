@@ -29,6 +29,7 @@ $og_image = 'fv.jpg';
 <body>
 <?php include $base . '/header.php'; ?>
 <main>
+<div class="toggle">
 </main>
 <?php include $base . '/footer.php'; ?>
 </body>
