@@ -3,7 +3,7 @@ $base = '.';
 require_once $base . '/meta.php';
 $title = '';
 $description = '';
-$local_path = '/'; // サイトのルートからのパスを記入
+$local_path = '/';// サイトのルートからのパスを記入
 $og_image = 'fv.jpg';
 ?>
 <!DOCTYPE html>
@@ -29,7 +29,8 @@ $og_image = 'fv.jpg';
 <body>
 <?php include $base . '/header.php'; ?>
 <main>
-<div class="toggle">
+<?php include $base . '/fv.php'; ?>
+<div class="toggle"></div>
 </main>
 <?php include $base . '/footer.php'; ?>
 </body>
