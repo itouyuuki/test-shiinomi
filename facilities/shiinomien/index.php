@@ -3,7 +3,7 @@ $base = '../..';
 $facility_base ='..';
 require_once $base . '/meta.php';
 $title = '上田しいのみ園＿施設紹介';
-$description = '上田しいのみ会は、障がいのある方や高齢の方が、地域の中で安心して暮らせるように支援する社会福祉法人です。９つの施設で構成されており、地域やボランティアの方々と共に、あたたかく開かれた福祉活動を続けています。';
+$description = '上田しいのみ園は、障害者自立支援法に基づく「障害者支援施設」です。入所支援や生活介護、短期入所を通じて、一人ひとりのペースに寄り添いながら、安心して過ごせる時間を支えています。';
 $local_path = '/facilities/shiinomien/'; // サイトのルートからのパスを記入
 $og_image = 'fv.jpg'; 
 ?>
@@ -20,7 +20,7 @@ $og_image = 'fv.jpg';
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="<?= $site_name ?>">
 <meta property="og:url" content="<?= $site_url . $local_path ?>">
-<meta property="og:title" content="<?= $title ?>">
+<meta property="og:title" content="<?= "$title | $site_name" ?>">
 <meta property="og:description" content="<?= $description ?>">
 <meta property="og:image" content="<?= $site_url . $local_path . $og_image ?>">
 <link rel="stylesheet" href="<?= $base ?>/common.css?v=1">
@@ -61,7 +61,7 @@ $og_image = 'fv.jpg';
     <section class="fv">
         <div class="inner">
             <hgroup>
-                <p>障害者支援施設</p>
+                <p class="disability-support">障害者支援施設</p>
                 <h1>上田しいのみ園</h1>
             </hgroup>
             <p class="access">
@@ -100,17 +100,10 @@ $og_image = 'fv.jpg';
                     日中は籠作りやプラスチック製品の箱詰め、清拭布たたみなどに取り組みます。<br>
                     午後はヨガや書道などで自分の時間も楽しみ、笑顔あふれる穏やかな毎日を過ごしています。
                 </p>
-                <input type="checkbox" id="popup">
-                <label class="btn-2" for="popup">日課を見る</label>
-                <div class="popup-overlay">
-                    <div class="popup-window">
-                        <img src="dairylist.png" alt="">
-                        <label class="popup-close" for="popup">
-                            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
-                                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
-                            </svg>
-                        </label>
+                <button class="btn-2" id="popup-btn">日課を見る</button>
+                <div class="popup-content">
+                    <div class="popup-wr">
+                        <img src="dairylist.png" alt="" id="dairylist">
                     </div>
                 </div>
             </div>
@@ -160,7 +153,7 @@ $og_image = 'fv.jpg';
     <section id="guide">
         <hgroup class="content-head">
             <div class="head-wr">
-                <h2>ご利用案内</h2>
+                <h2>ご利用の流れ</h2>
             </div>
         </hgroup>
         <div class="content-wr">
@@ -168,12 +161,11 @@ $og_image = 'fv.jpg';
                 ご利用をお考えの方は、在住市町村の福祉窓口および障害者総合支援センター・相談支援事業所「椎の実」にご相談ください。
             </p>
             <ol class="content-list">
-                <li>当事業所か相談支援事業所、在住市町村の福祉窓口に相談</li>
-                <li>障害支援区分認定調査</li>
-                <li>支給決定</li>
-                <li>受給者証の交付</li>
-                <li>上田しいのみ園と利用計画</li>
-                <li>上田しいのみ園利用開始</li>
+                <li>在住市町村の福祉窓口、もしくは相談支援事業所「椎の実」に相談</li>
+                <li>相談支援事業所による聞き取りや、関係者支援会議により利用計画書が作成され、市町村に提出</li>
+                <li>市町村から障害支援区分等の調査等が行なわれ利用についての受給者証が交付</li>
+                <li>当事業所と利用契約や必要な手続き</li>
+                <li>利用計画書に基づいた個別支援計画により利用が開始</li>
             </ol>
             <p class="text">
                 ※上田市以外に在住の皆さんの利用については、在住市町村と上田市で協議してからの利用となります。
@@ -181,7 +173,7 @@ $og_image = 'fv.jpg';
             <p class="text">
                 ※相談支援事業所「椎の実」は以下のボタンから
             </p>
-            <a href="<?= $base ?>/facilities/shiinomi/" class="btn-2">椎の実ページへ</a>
+            <a href="<?= $facility_base ?>/shiinomi/" class="btn-2">椎の実ページへ</a>
         </div>
     </section>
     <section id="policy">
@@ -192,14 +184,14 @@ $og_image = 'fv.jpg';
         </hgroup>
         <ul class="content-wr text">
             <li>法人の基本理念に基づき、わたしたちは</li>
-            <li class="ten">安心、安全、快適な生活を提供し、一人ひとりのより満足できる支援に全力で取り組みます。</li>
-            <li class="ten">利用者一人ひとりの思いやりや夢を大事にして、その実現のために全力で個別支援をします。</li>
-            <li class="ten">福祉の基本理念に誠実な支援をします。</li>
-            <li class="ten">支援技術の向上のために常に全力で取り組みます。</li>
-            <li class="ten">生産活動を通じて働く意欲の向上のための個別の支援をします。</li>
-            <li class="ten">創作的活動や余暇的活動を通じて生活の豊かさのための支援をします。</li>
-            <li class="ten">地域住民との連携を深め、地域福祉の向上に積極的に取り組みます。</li>
-            <li class="ten">事業活動の透明性と健全かつ活力ある事業経営に全力で取り組みます。</li>
+            <li>安心、安全、快適な生活を提供し、一人ひとりのより満足できる支援に全力で取り組みます。</li>
+            <li>利用者一人ひとりの思いやりや夢を大事にして、その実現のために全力で個別支援をします。</li>
+            <li>福祉の基本理念に誠実な支援をします。</li>
+            <li>支援技術の向上のために常に全力で取り組みます。</li>
+            <li>生産活動を通じて働く意欲の向上のための個別の支援をします。</li>
+            <li>創作的活動や余暇的活動を通じて生活の豊かさのための支援をします。</li>
+            <li>地域住民との連携を深め、地域福祉の向上に積極的に取り組みます。</li>
+            <li>事業活動の透明性と健全かつ活力ある事業経営に全力で取り組みます。</li>
         </ul>
     </section>
     <section id="facility">
@@ -258,11 +250,11 @@ $og_image = 'fv.jpg';
             <tr>
                 <th class="category" rowspan="10">職員体制</th>
                 <td>施設長</td>
-                <td class="inner">1名</td>
+                <td>1名</td>
             </tr>
             <tr>
-                <td class="title">サービス管理責任者</td>
-                <td class="inner">2名（1名兼務）</td>
+                <td>サービス管理責任者</td>
+                <td>2名（1名兼務）</td>
             </tr>
             <tr>
                 <td class="title">医師</td>
@@ -305,9 +297,7 @@ $og_image = 'fv.jpg';
             <h2>ご利用料金</h2>
             </div>
         </hgroup>
-
-        <div class="fee-table">
-            <table>
+        <table>
             <tr>
                 <th class="category" rowspan="3">生活費</th>
                 <td class="title">食費</td>
@@ -321,22 +311,26 @@ $og_image = 'fv.jpg';
                 <td class="title">その他</td>
                 <td class="inner">サービス利用料金の利用者負担額</td>
             </tr>
-            <tr>
-                <th class="category">その他の費用</th>
-                <td colspan="2" class="inner">
-                理容料金、医療費、行政手続き等、介護給付費等の給付対象外のサービスを利用した場合は、別途のお支払いになります。
-                </td>
-            </tr>
-            </table>
-            <p class="way">※お支払方法<p>
-            <p class="way-inner">
-            毎月10日までに前月分の請求を致しますので、当月の20日までにお支払下さい。<br>
-            お支払方法は、現金もしくは銀行振込の中からご契約の際に選べます。受領後は領収書を発行します。
-            </p>
-        </div>
+        </table>
+        <dl>
+            <div>
+                <dt>
+                    その他の費用
+                </dt>
+                <dd>
+                    理容料金、医療費、行政手続き等、介護給付費等の給付対象外のサービスを利用した場合は、別途のお支払いになります。
+                </dd>
+            </div>
+        </dl>
+        <p class="way">※お支払方法<p>
+        <p class="way-inner">
+        毎月10日までに前月分の請求を致しますので、当月の20日までにお支払下さい。<br>
+        お支払方法は、現金もしくは銀行振込の中からご契約の際に選べます。受領後は領収書を発行します。
+        </p>
     </section>
 </div>
 </main>
 <?php include $base . '/footer.php'; ?>
+<script src="popup.js"></script>
 </body>
 </html>

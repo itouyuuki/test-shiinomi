@@ -4,7 +4,6 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
     font-weight: 500;
 }
 
@@ -57,6 +56,10 @@ body {
     font-weight: 500;
 }
 
+.btn-2 {
+    font-size: clamp(18px,3.5vw,22px);
+}
+
 .btn-2::after {
     content:">";
 }
@@ -69,7 +72,7 @@ body {
 
 .fv hgroup p {
     color: #fff;
-    background-color: #E27800;
+    background-color: var(--main-color);
     width: fit-content;
     padding: 4px 8px;
 }
@@ -92,7 +95,7 @@ body {
 }
 
 .fv .inner .access .call {
-    color: #3f342d;
+    color: var(--font-color);
     text-decoration: none;
     display: inline;
 }
@@ -271,8 +274,9 @@ body {
     margin: 0; 
 }
 
-#policy ul .ten::before {
-    content: "・";
+#policy ul li:not(:first-child) {
+    list-style: outside disc;
+    margin: 8px 0 8px 1.25em;
 }
 
 /** facility **/
@@ -283,51 +287,25 @@ body {
 .info-table {
     width: 100%;
     max-width: 880px;
-    border-collapse: separate;
-    border-spacing: 0 10px; /* 行間 */
-    margin-top: 8px;
     font-size: clamp(16px, 3.5vw, 20px); 
+    margin: 40px 0;
+}
+
+.info-table tr {
+
 }
 
 .info-table th {
-    background: #8a2100;
+    background-color: var(--main-color);
     color: #fff;
-    padding: 4px 20px;
-    width: 180px; /* 左幅固定 */
-    text-align: center;
-    font-weight: bold;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    display: block;
-    width: 100%;
+    font-weight: 400;
 }
 
 .info-table td {
-    position: relative;
-    background: #fff;
-    padding: 6px 20px;
-    border-left: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: 0px 1px 5px -2px #9f2a00;
-    display: block;
 }
 
-.info-table td::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 99%;
-    height: 0.5px;   
-    background-color: #9f2a00;
-}
-
-.info-table .title {
-    margin-top: -8px;
-}
-
-@media (min-width: 900px) {
+/* スマホ版 */
+@media (max-width: 900px) {
     .info-table tr {
         display: table-row;
         margin-bottom: 0;
@@ -379,14 +357,6 @@ body {
     font-weight: bold;
 }
 
-.fee-table table,
-.fee-table tr,
-.fee-table th,
-.fee-table td {
-    display: block;
-    box-sizing: border-box;
-}
-
 .fee-table th {
     margin-top: 8px;
     border-bottom-left-radius: 0;
@@ -395,7 +365,7 @@ body {
     width: 100%;
 }
 
-@media screen and (min-width: 900px) {
+@media(min-width: 900px) {
     .fee-table table {
         display: table;
     }
@@ -431,58 +401,63 @@ body {
 /***********
 しいのみ園
 ************/
-
-#popup {
-    display: none; /* label でコントロールするので input は非表示に */
+.shiinomien.show {
+    overflow: hidden;
 }
 
-.popup-open {
-    cursor: pointer; /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
+.shiinomien #news {
+    position: relative;
 }
 
-.popup-overlay {
-    display: none; /* input にチェックが入るまでは非表示に */
-}
-
-#popup:checked ~ .popup-overlay {
-    display: block;
-    z-index: 99999;
-    background-color: #00000070;
+.shiinomien #news .popup-content {
+    display: none;
     position: fixed;
-    width: 100%;
-    height: 100vh;
     top: 0;
     left: 0;
-}
-
-.popup-window {
-    width: 80vw;
-    max-width: 470px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 6px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#news .content-inner .popup-window img {
-    width: 90%;
-    display: block;
-    border-radius: 4px; /* optional */
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
     margin: auto;
 }
 
-.popup-close {
-    cursor: pointer;
-    position: absolute;
-    top: -26px;
-    right: 0;
+.shiinomien.show #news .popup-content {
+    display: block;
 }
 
-@media screen (min-width:1024px) {
-    #news .content-inner .popup-window img {
-    width: 470px;
+.shiinomien #news .popup-wr {
+    width: min(90%, 600px);
+    position: fixed;
+    height: 50%;
+    padding: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 16px;
 }
+
+.shiinomien #news .popup-wr::before {
+    content: "\0d7";
+    position: absolute;
+    font-size: 50px;
+    top: -18px;
+    left: 12px;
+}
+
+.shiinomien #news .popup-wr #dairylist {
+    width: min(100%, 600px);
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+@media(min-width: 640px) {
+    .shiinomien #news .popup-wr {
+        height: 80%;
+    }
 }
