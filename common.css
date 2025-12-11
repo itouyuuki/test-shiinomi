@@ -67,13 +67,14 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 100px;
 }
 
 body {
     font-family: var(--normal-font);
     background-color: var(--back-color);
     color: var(--font-color);
+    margin: 0;
 }
 
 main {
@@ -150,6 +151,7 @@ body a {
     line-height: 1.8;
     font-weight: 400;
     max-width: 40em;
+    font-size: clamp(16px, 3.5vw, 20px);
 }
 
 /********************
@@ -163,7 +165,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     z-index: 25;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     align-items: center;
