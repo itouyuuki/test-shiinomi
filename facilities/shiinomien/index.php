@@ -5,7 +5,7 @@ require_once $base . '/meta.php';
 $title = '上田しいのみ園＿施設紹介';
 $description = '上田しいのみ園は、障害者自立支援法に基づく「障害者支援施設」です。入所支援や生活介護、短期入所を通じて、一人ひとりのペースに寄り添いながら、安心して過ごせる時間を支えています。';
 $local_path = '/facilities/shiinomien/'; // サイトのルートからのパスを記入
-$og_image = 'fv.jpg'; 
+$og_image = 'fv.jpg';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -15,7 +15,7 @@ $og_image = 'fv.jpg';
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= "$title | $site_name" ?></title>
 <meta name="description" content="<?= $description ?>">
-<link rel="icon" href="<?= $base . $favicon ?>">  
+<link rel="icon" href="<?= $base . $favicon ?>">
 <link rel="canonical" href="<?= $site_url . $local_path ?>">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="<?= $site_name ?>">
@@ -202,93 +202,101 @@ $og_image = 'fv.jpg';
         </hgroup>
         <img src="shiinomien.jpg" alt="" class="building">
         <table class="info-table">
-	    <tbody>
-            <tr>
-                <th>指定事業所名</th>
-                <td colspan="2">上田しいのみ園</td>
-            </tr>
-            <tr>
-                <th>所在地</th>
-                <td colspan="2">上田市中之条801番地</td>
-            </tr>
-            <tr>
-                <th>連絡先</th>
-                <td colspan="2">（TEL）0268-27-3166　（FAX）0268-27-3175</td>
-            </tr>
-            <tr>
-                <th>指定事業所コード</th>
-                <td colspan="2">2010300289</td>
-            </tr>
-            <tr>
-                <th>相談支援事業</th>
-                <td colspan="2">2030300061</td>
-            </tr>
-            <tr>
-                <th>事業開始年月日</th>
-                <td colspan="2">昭和53年4月1日</td>
-            </tr>
-            <tr>
-                <th>利用定員</th>
-                <td colspan="2"> (施設入所支援)　40名　　(生活介護)　40名　 (短期入所)　2名　</td>
-            </tr>
-            <tr>
-                <th>敷地面積</th>
-                <td colspan="2">3,423.09㎡</td>
-            </tr>
-            <tr>
-                <th>延床面積</th>
-                <td colspan="2">1,632.97㎡</td>
-            </tr>
-            <tr>
-                <th>鉄筋平屋建1棟</th>
-                <td colspan="2">住居棟全床暖房</td>
-            </tr>
-            <tr>
-                <th>特殊付帯設備</th>
-                <td colspan="2">暖房設備、居住棟床暖房、スプリンクラーその他ファンコンベクター25台</td>
-            </tr>
-            <tr>
-                <th class="category" rowspan="10">職員体制</th>
-                <td>施設長</td>
-                <td>1名</td>
-            </tr>
-            <tr>
-                <td>サービス管理責任者</td>
-                <td>2名（1名兼務）</td>
-            </tr>
-            <tr>
-                <td class="title">医師</td>
-                <td class="inner">2名（非常勤）</td>
-            </tr>
-            <tr>
-                <td class="title">看護師</td>
-                <td class="inner">3名</td>
-            </tr>
-            <tr>
-                <td class="title">理学療法士</td>
-                <td class="inner">1名</td>
-            </tr>
-            <tr>
-                <td class="title">生活指導員</td>
-                <td class="inner">23名（パート6名含む）（うち介護福祉士16名）</td>
-            </tr>
-            <tr>
-                <td class="title">管理栄養士</td>
-                <td class="inner">1名</td>
-            </tr>
-            <tr>
-                <td class="title">調理師</td>
-                <td class="inner">5名</td>
-            </tr>
-            <tr>
-                <td class="title">事務職員</td>
-                <td class="inner">2名</td>
-            </tr>
-            <tr>
-                <td class="title">合計</td>
-                <td class="inner">27名</td>
-            </tr>
-        </tbody>
+            <tbody>
+                <tr>
+                    <th>指定事業所名</th>
+                    <td colspan="2">上田しいのみ園</td>
+                </tr>
+                <tr>
+                    <th>所在地</th>
+                    <td colspan="2">上田市中之条801番地</td>
+                </tr>
+                <tr>
+                    <th>連絡先</th>
+                    <td colspan="2">（TEL）0268-27-3166　（FAX）0268-27-3175</td>
+                </tr>
+                <tr>
+                    <th>指定事業所コード</th>
+                    <td colspan="2">2010300289</td>
+                </tr>
+                <tr>
+                    <th>相談支援事業</th>
+                    <td colspan="2">2030300061</td>
+                </tr>
+                <tr>
+                    <th>事業開始年月日</th>
+                    <td colspan="2">昭和53年4月1日</td>
+                </tr>
+                <tr>
+                    <th>利用定員</th>
+                    <td colspan="2">
+                        (施設入所支援)　40名<br>
+                        (生活介護)　40名<br>
+                        (短期入所)　2名
+                    </td>
+                </tr>
+                <tr>
+                    <th>敷地面積</th>
+                    <td colspan="2">3,423.09㎡</td>
+                </tr>
+                <tr>
+                    <th>延床面積</th>
+                    <td colspan="2">1,632.97㎡</td>
+                </tr>
+                <tr>
+                    <th>鉄筋平屋建1棟</th>
+                    <td colspan="2">住居棟全床暖房</td>
+                </tr>
+                <tr>
+                    <th>特殊付帯設備</th>
+                    <td colspan="2">暖房設備、居住棟床暖房、スプリンクラーその他ファンコンベクター25台</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="info-table sub-table">
+            <tbody>
+                <tr>
+                    <th class="category" rowspan="10">職員体制</th>
+                    <td>施設長</td>
+                    <td>1名</td>
+                </tr>
+                <tr>
+                    <td>サービス管理責任者</td>
+                    <td>2名（1名兼務）</td>
+                </tr>
+                <tr>
+                    <td>医師</td>
+                    <td>2名（非常勤）</td>
+                </tr>
+                <tr>
+                    <td>看護師</td>
+                    <td>3名</td>
+                </tr>
+                <tr>
+                    <td>理学療法士</td>
+                    <td>1名</td>
+                </tr>
+                <tr>
+                    <td>生活指導員</td>
+                    <td>23名（パート6名含む）（うち介護福祉士16名）</td>
+                </tr>
+                <tr>
+                    <td>管理栄養士</td>
+                    <td>1名</td>
+                </tr>
+                <tr>
+                    <td>調理師</td>
+                    <td>5名</td>
+                </tr>
+                <tr>
+                    <td>事務職員</td>
+                    <td>2名</td>
+                </tr>
+                <tr>
+                    <td>合計</td>
+                    <td>27名</td>
+                </tr>
+            </tbody>
         </table>
     </section>
     <section id="fees">
@@ -297,31 +305,29 @@ $og_image = 'fv.jpg';
             <h2>ご利用料金</h2>
             </div>
         </hgroup>
-        <table>
+        <table class="info-table sub-table">
             <tr>
-                <th class="category" rowspan="3">生活費</th>
-                <td class="title">食費</td>
-                <td class="inner">1日1,428円</td>
+                <th rowspan="3">生活費</th>
+                <td>食費</td>
+                <td>1日1,428円</td>
             </tr>
             <tr>
-                <td class="title">光熱費</td>
+                <td>光熱費</td>
                 <td>1日394円</td>
             </tr>
             <tr>
-                <td class="title">その他</td>
-                <td class="inner">サービス利用料金の利用者負担額</td>
+                <td>その他</td>
+                <td>サービス利用料金の利用者負担額</td>
             </tr>
         </table>
-        <dl>
-            <div>
-                <dt>
-                    その他の費用
-                </dt>
-                <dd>
-                    理容料金、医療費、行政手続き等、介護給付費等の給付対象外のサービスを利用した場合は、別途のお支払いになります。
-                </dd>
-            </div>
-        </dl>
+        
+        <table class="info-table">
+            <tbody>
+                <tr>
+                    <th>その他の費用</th>
+                    <td colspan="2">理容料金、医療費、行政手続き等、介護給付費等の給付対象外のサービスを利用した場合は、別途のお支払いになります。</td>
+            </tbody>
+        </table>
         <p class="way">※お支払方法<p>
         <p class="way-inner">
         毎月10日までに前月分の請求を致しますので、当月の20日までにお支払下さい。<br>
