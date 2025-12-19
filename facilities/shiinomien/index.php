@@ -2,6 +2,8 @@
 $base = '../..';
 $facility_base ='..';
 require_once $base . '/meta.php';
+require_once $base . '/wp-get-news.php';
+require_once $base . '/wp-get-blog.php';
 $title = '上田しいのみ園＿施設紹介';
 $description = '上田しいのみ園は、障害者自立支援法に基づく「障害者支援施設」です。入所支援や生活介護、短期入所を通じて、一人ひとりのペースに寄り添いながら、安心して過ごせる時間を支えています。';
 $local_path = '/facilities/shiinomien/'; // サイトのルートからのパスを記入
@@ -91,6 +93,20 @@ $og_image = 'fv.jpg';
                 <p class="before-line">しいのみ通信</p>
             </div>
         </hgroup>
+        <div class="news wp-content-scroll">
+            <?php include $base . '/wp-news.php' ?>
+        </div>
+        <div class="more">
+            <div class="arrows">
+                <button class="arrow-btn prev">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+                <button class="arrow-btn next">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+            </div>
+            <a href="<?= $base ?>/wp/news/" class="btn-2">もっと見る</a>
+        </div>
         <div class="content-inner">
             <img src="news.jpg" alt="">
             <div class="news-wr">
@@ -122,6 +138,10 @@ $og_image = 'fv.jpg';
                 <p class="before-line">しいのみ日和</p>
             </div>
         </hgroup>
+        <div class="blog wp-content-scroll">
+            <?php include $base . '/wp-blog.php' ?>
+        </div>
+        <a href="<?= $base ?>/wp/category/blog/" class="btn-2">もっと見る</a>
     </section>
     <section id="support">
         <hgroup class="content-head">

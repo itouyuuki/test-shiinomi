@@ -1,6 +1,7 @@
 <?php
 $base = '..';
 require_once $base . '/meta.php';
+require_once $base . '/wp-get-blog.php';
 $title = '上田しいのみ園について';
 $description = '上田しいのみ会の法人理念や沿革、名前の由来などをご紹介します。組織体制や決算報告などの情報開示についても、こちらのページをご覧ください。';
 $local_path = '/about/'; // サイトのルートからのパスを記入
@@ -48,7 +49,8 @@ $og_image = 'shiinoki.jpg';
         小さな芽が少しずつ伸びていくように、人も地域も支えながら育っていく。<br>
         そんな温もりを、ここから感じていただけたら嬉しいです。
     </p>
-    <a href="./blog/" class="btn-2">ブログ一覧を見る</a>
+    <?php include $base . '/wp-blog.php' ?>
+    <a href="<?= $base ?>/wp/category/blog/" class="btn-2">もっと見る</a>
 </section>
 <section class="philosophy">
     <h2>法人理念・ご挨拶</h2>
@@ -211,7 +213,7 @@ $og_image = 'shiinoki.jpg';
             </dd>
         </div>
     </dl>
-    <button id="view-more" class="btn-2"><span>もっと見る</span></button>
+    <button id="view-more" class="btn-1"><span>もっと見る</span></button>
 </section>
 <section class="corporate-info">
     <h2>法人情報・運営について</h2>
@@ -219,7 +221,7 @@ $og_image = 'shiinoki.jpg';
         法人の運営に関する情報をまとめています。<br>
         決算報告や組織体制、苦情への対応、個人情報保護方針などを公開し、透明性のある運営を心がけています。
     </p>
-    <a href="./corporate-info/" class="btn-2">詳細はこちら</a>
+    <a href="./corporate-info/" class="btn-1">詳細はこちら</a>
 </section>
 </main>
 <?php include $base . '/footer.php'; ?>

@@ -1,5 +1,5 @@
 const accordionBtns = document.querySelectorAll(".accordion_content");
-const isOpenMenu = false;
+let isOpenMenu = false;
 
 accordionBtns.forEach((btn) => {
   btn.addEventListener("click", () => {

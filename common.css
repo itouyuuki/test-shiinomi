@@ -88,7 +88,6 @@ main {
 
 .navipage .content {
     max-width: 880px;
-    flex-grow: 1;
 }
 
 .facility-navi {
@@ -158,7 +157,7 @@ main {
         position: sticky;
         height: fit-content;
         top: 90px;
-        flex-grow: 1;
+        width: 28%;
     }
 
     .content details {
@@ -168,6 +167,16 @@ main {
     .navipage {
         display: flex;
         gap: 32px;
+    }
+
+    .navipage .content {
+        width: 63%;
+    }
+}
+
+@media(min-width:1000px){
+    .navipage .content {
+        width: 72%;
     }
 }
 
@@ -704,6 +713,7 @@ FV
     .fv .fv-content p {
         margin-top: 10px;
     }
+}
 /******************
 
 トグルボタン
@@ -763,4 +773,92 @@ FV
     left: calc(100% - 26px);
     color: var(--main-color);
     background-color: #ffffff;
+}
+
+/*********
+/wp/news/,/wp/category/blog/につながる部分
+*********/
+.wp-contents-list .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1%;
+    margin: 16px 0;
+    text-decoration: none;
+}
+
+.wp-contents-list .item .thum-img {
+    width: 39%;
+}
+
+.wp-contents-list .item .inner {
+    width: 59%;
+}
+
+.wp-contents-list .category-name {
+    color: #fff;
+    background-color: var(--main-color, var(--main));
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 14px;
+    padding: 2px 8px;
+    margin: 0;
+}
+
+.wp-contents-list .inner .date {
+    text-align: right;
+    color: var(--font-color);
+    margin-left: auto;
+}
+
+.wp-contents-list h3.title {
+    color: var(--font-color);
+    text-decoration: underline;
+    margin: 4px 0;
+    font-size: 20px;
+}
+
+@media(min-width:600px) {
+    .wp-contents-list {
+        display: flex;
+        gap: 32px;
+        margin: 1em auto;
+        max-width: 972px;
+    }
+
+    .wp-contents-list .item {
+        flex-direction: column;
+    }
+
+    .wp-contents-list .item .thum-img {
+        width: 100%;
+        margin-bottom: 16px;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .wp-contents-list .item .inner {
+        width: 100%;
+    }
+}
+
+/*** blog ***/
+.blog .wp-contents-list .wp-meta-wr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 12px;
+}
+
+/** scroll **/
+@media(min-width:600px) {
+    .wp-content-scroll .wp-contents-list {
+        overflow-x: scroll;
+    }
+
+    .wp-content-scroll .wp-contents-list .item {
+        width: 300px;
+    }
 }

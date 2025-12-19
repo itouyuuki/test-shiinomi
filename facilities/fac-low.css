@@ -5,6 +5,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     font-weight: 500;
+    padding: 0 18px;
 }
 
 .content section {
@@ -67,10 +68,6 @@ body {
 
 .btn-2 {
     font-size: clamp(18px,3.5vw,22px);
-}
-
-.btn-2::after {
-    content:">";
 }
 
 /** fv **/
@@ -143,6 +140,10 @@ body {
 }
 
 /** news **/
+#news .content-inner img {
+    margin: 1em auto;
+}
+
 #news .news-wr h3 {
     font-size: clamp(20px,4vw,24px);
     margin: 10px 0;
@@ -161,7 +162,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 6px 2%;
+    gap: 6px 1%;
     margin: 1.5em 0;
 }
 
