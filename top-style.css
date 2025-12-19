@@ -88,7 +88,7 @@ a {
 
 .slides .catch-wr {
     position: absolute;
-    top: -10px;
+    top: 0;
     left: 0;
     z-index: 2;
 }
@@ -130,11 +130,8 @@ a {
     opacity: 1;
 }
 
-.slides .slides-wr .slide:nth-child(4) {
+.slides .slides-wr .slide:nth-child(5) {
     object-position: 50% 30%;
-}
-.slides .slides-wr .slide:nth-child(6) {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
 }
 
 .slides .fv-btn {
@@ -154,8 +151,10 @@ a {
 
 .slides #prevBtn,
 .slides #nextBtn {
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
 }
 
 .slides #prevBtn {
@@ -186,14 +185,9 @@ a {
     transform: translateY(0);
 }
 
-.slides #prevBtn:active,
-.slides #nextBtn:active {
-    transform: translateY(-50%) scale(0.95);
-}
-
 .slides .dots {
     position: absolute;
-    bottom: 20px;
+    bottom: 60px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -249,7 +243,6 @@ a {
 @media (min-width:600px) {
     .slides{
         width: 90%;
-        padding: 60px 70px 0;
     }
 
     .slides .slides-wr{
@@ -265,7 +258,7 @@ a {
     }
 
     .slides #playPauseBtn {
-        right: 80px;
+        right: 10px;
         top: 70px;
         left: auto;
         bottom: auto;
@@ -742,6 +735,7 @@ a {
     min-width: 300px;
     height: 350px;
     object-fit: cover;
+    object-position: 25% 50%;
 }
 
 .recruit .inner {

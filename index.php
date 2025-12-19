@@ -1,8 +1,8 @@
 <?php
 $base = '.';
 require_once $base . '/meta.php';
-$title = '';
-$description = '';
+$title = '社会福祉法人 上田しいのみ会｜長野県上田市';
+$description = '上田しいのみ会は、障がいのある方や高齢の方が、地域の中で安心して暮らせるように支援する社会福祉法人です。９つの施設で構成されており、地域やボランティアの方々と共に、あたたかく開かれた福祉活動を続けています。';
 $local_path = '/'; // サイトのルートからのパスを記入
 $og_image = 'fv.jpg';
 ?>
@@ -12,14 +12,14 @@ $og_image = 'fv.jpg';
 <meta charset="utf-8">
 <?php include_once $base . '/tracking.php' ?>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?= "$title | $site_name" ?></title>
+<title><?= "$title" ?></title>
 <meta name="description" content="<?= $description ?>">
-<link rel="icon" href="<?= $base . $favicon ?>">  
+<link rel="icon" href="<?= $base . $favicon ?>">
 <link rel="canonical" href="<?= $site_url . $local_path ?>">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="<?= $site_name ?>">
 <meta property="og:url" content="<?= $site_url . $local_path ?>">
-<meta property="og:title" content="<?= "$title | $site_name" ?>">
+<meta property="og:title" content="<?= "$title" ?>">
 <meta property="og:description" content="<?= $description ?>">
 <meta property="og:image" content="<?= $site_url . $local_path . $og_image ?>">
 <link rel="stylesheet" href="<?= $base ?>/common.css?v=1">
@@ -35,12 +35,12 @@ $og_image = 'fv.jpg';
         <p>共に支え、共に生きる社会へ</p>
     </div>
     <div class="slides-wr">
-        <img src="ryogoen.jpg" width="2048" height="1536" alt="" class="slide active">
+        <img src="past-fv.jpg" width="1900" height="600" alt="" class="slide active">
+        <img src="ryogoen.jpg" width="2048" height="1536" alt="" class="slide">
         <img src="tsumuginoie.jpg" width="1417" height="796" alt="" class="slide">
         <img src="shiinomien.jpg" width="2048" height="1365" alt="" class="slide">
         <img src="fv-4.jpg" width="2048" height="1536" alt="" class="slide">
         <img src="fv-5.jpg" width="2048" height="1152" alt="" class="slide">
-        <img src="" alt="" class="slide">
     </div>
     <button class="fv-btn" id="prevBtn">
         <img src="triangle.svg" alt="">
@@ -62,7 +62,7 @@ $og_image = 'fv.jpg';
         <div class="content">
             <h2>しいのみ通信</h2>
             <p>上田しいのみ会や、各施設からのお知らせをお届けします。</p>
-            <a href="" class="btn-arrow">
+            <a href="<?= $base ?>/wp/news/" class="btn-arrow">
                 <p>もっと見る</p>
             </a>
         </div>
@@ -84,8 +84,8 @@ $og_image = 'fv.jpg';
             </a>
         </div>
         <div class="img-wr">
-            <img src="top-about-1.jpg" alt=""class="big">
-            <img src="top-about-2.jpg" alt=""class="small">
+            <img src="top-about-1.jpg" alt="" class="big">
+            <img src="top-about-2.jpg" alt="" class="small">
         </div>
     </div>
 </section>
