@@ -58,7 +58,7 @@ $og_image = 'fv.jpg';
             <li><a href="#fees" class="btn-1">ご利用料金</a></li>
         </ul>
     </details>
-    <section class="fv">
+    <section class="outline">
         <div class="inner">
             <hgroup>
                 <p class="disability-support">障害者支援施設</p>
@@ -67,12 +67,12 @@ $og_image = 'fv.jpg';
             <p class="access">
                 〒386-0034<br>
                 上田市中之条801番地<br>
-                <span class="highlight">TEL</span><a class="call" href="tel:0268-27-3166">:0268-27-3166</a>　<span class="bp"><span class="highlight">FAX</span>:0268-27-3175</span>
+                <span class="highlight">TEL</span><a class="call" href="tel:0268-27-3166">:0268-27-3166</a><span class="bp"><span class="highlight">FAX</span>:0268-27-3175</span>
             </p>
         </div>
-        <div class="fv-content">
+        <div class="outline-content">
             <img src="fv.jpg" alt="" class="fv-image">
-            <div class="fv-inner">
+            <div class="inner">
                 <h2>
                     笑顔が咲く、<span class="bp">わたしの居場所。</span>
                 </h2>
@@ -88,7 +88,7 @@ $og_image = 'fv.jpg';
         <hgroup class="content-head">
             <div class="head-wr">
                 <h2>お知らせ</h2>
-                <p>- しいのみ通信</p>
+                <p class="before-line">しいのみ通信</p>
             </div>
         </hgroup>
         <div class="content-inner">
@@ -119,7 +119,7 @@ $og_image = 'fv.jpg';
         <hgroup class="content-head">
             <div class="head-wr">
                 <h2>ブログ</h2>
-                <p>- しいのみ日和</p>
+                <p class="before-line">しいのみ日和</p>
             </div>
         </hgroup>
     </section>
@@ -129,7 +129,7 @@ $og_image = 'fv.jpg';
                 <h2>しいのみ園の支援内容</h2>
             </div>
         </hgroup>
-        <ol class= "content-list">
+        <ol class="content-list">
             <li>
                 <h3>施設入所支援事業</h3>
                 <p class="text">
@@ -302,7 +302,7 @@ $og_image = 'fv.jpg';
     <section id="fees">
         <hgroup class="content-head">
             <div class="head-wr">
-            <h2>ご利用料金</h2>
+                <h2>ご利用料金</h2>
             </div>
         </hgroup>
         <table class="info-table sub-table">
@@ -320,7 +320,6 @@ $og_image = 'fv.jpg';
                 <td>サービス利用料金の利用者負担額</td>
             </tr>
         </table>
-        
         <table class="info-table">
             <tbody>
                 <tr>
@@ -330,8 +329,8 @@ $og_image = 'fv.jpg';
         </table>
         <p class="way">※お支払方法<p>
         <p class="way-inner">
-        毎月10日までに前月分の請求を致しますので、当月の20日までにお支払下さい。<br>
-        お支払方法は、現金もしくは銀行振込の中からご契約の際に選べます。受領後は領収書を発行します。
+            毎月10日までに前月分の請求を致しますので、当月の20日までにお支払下さい。<br>
+            お支払方法は、現金もしくは銀行振込の中からご契約の際に選べます。受領後は領収書を発行します。
         </p>
     </section>
 </div>
