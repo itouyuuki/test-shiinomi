@@ -149,15 +149,15 @@ boxes-wr
 disability-support
 *****************/
 
-.disability-support {
+#disability-support {
     border: 4px solid var(--main-color);
 }
 
-.disability-support h2 {
+#disability-support h2 {
     color: var(--sub-color);
 }
 
-.disability-support h2::before {
+#disability-support h2::before {
     content: "";
     background-color: var(--main-color);
     border-radius: 100vh;
@@ -172,28 +172,28 @@ disability-support
 shiinomien
 **********/
 
-.disability-support ul li .shiinomien{
+#disability-support ul li .shiinomien{
     border: 2px solid var(--main-color);
     color: var(--main-color);
 }
 
-.disability-support ul li .shiinomien img{
+#disability-support ul li .shiinomien img{
     object-position: 50% 25%;
 }
 
-.disability-support ul li .shiinomien .text-box{
+#disability-support ul li .shiinomien .text-box{
     border-top: 2px solid var(--main-color);
 }
 
-.disability-support ul li .shiinomien .text-box .small-title::before{
+#disability-support ul li .shiinomien .text-box .small-title::before{
     background-color: var(--main-color);
 }
 
 @media(min-width:1100px) {
-    .disability-support ul li .shiinomien {
+    #disability-support ul li .shiinomien {
         border: 6px solid var(--main-color);
     }
-    .disability-support ul li .shiinomien .text-box{
+    #disability-support ul li .shiinomien .text-box{
         border-top: none;
         border-left: 6px solid var(--main-color);
     }
@@ -206,28 +206,28 @@ disability-support
 tsumuginoie
 **********/
 
-.disability-support ul li .tsumuginoie{
+#disability-support ul li .tsumuginoie{
     border: 2px solid var(--main-color);
     color: var(--main-color);
 }
 
-.disability-support ul li .tsumuginoie img{
+#disability-support ul li .tsumuginoie img{
     object-position: 50% 70%;
 }
 
-.disability-support ul li .tsumuginoie .text-box{
+#disability-support ul li .tsumuginoie .text-box{
     border-top: 2px solid var(--main-color);
 }
 
-.disability-support ul li .tsumuginoie .text-box .small-title::before{
+#disability-support ul li .tsumuginoie .text-box .small-title::before{
     background-color: var(--main-color);
 }
 
 @media(min-width:1100px) {
-    .disability-support ul li .tsumuginoie {
+    #disability-support ul li .tsumuginoie {
         border: 6px solid var(--main-color);
     }
-    .disability-support ul li .tsumuginoie .text-box{
+    #disability-support ul li .tsumuginoie .text-box{
         border-top: none;
         border-left: 6px solid var(--main-color);
     }
@@ -240,28 +240,28 @@ disability-support
 ryogoen
 **********/
 
-.disability-support ul li .ryogoen{
+#disability-support ul li .ryogoen{
     border: 2px solid var(--main-color);
     color: var(--main-color);
 }
 
-.disability-support ul li .ryogoen img{
+#disability-support ul li .ryogoen img{
     object-position: 50% 34%;
 }
 
-.disability-support ul li .ryogoen .text-box{
+#disability-support ul li .ryogoen .text-box{
     border-top: 2px solid var(--main-color);
 }
 
-.disability-support ul li .ryogoen .text-box .small-title::before{
+#disability-support ul li .ryogoen .text-box .small-title::before{
     background-color: var(--main-color);
 }
 
 @media(min-width:1100px) {
-    .disability-support ul li .ryogoen {
+    #disability-support ul li .ryogoen {
         border: 6px solid var(--main-color);
     }
-    .disability-support ul li .ryogoen .text-box{
+    #disability-support ul li .ryogoen .text-box{
         border-top: none;
         border-left: 6px solid var(--main-color);
     }
@@ -274,24 +274,24 @@ disability-support
 shiinomi
 **********/
 
-.disability-support ul li .shiinomi{
+#disability-support ul li .shiinomi{
     border: 2px solid var(--main-color);
     color: var(--main-color);
 }
 
-.disability-support ul li .shiinomi .text-box{
+#disability-support ul li .shiinomi .text-box{
     border-top: 2px solid var(--main-color);
 }
 
-.disability-support ul li .shiinomi .text-box .small-title::before{
+#disability-support ul li .shiinomi .text-box .small-title::before{
     background-color: var(--main-color);
 }
 
 @media(min-width:1100px) {
-    .disability-support ul li .shiinomi {
+    #disability-support ul li .shiinomi {
         border: 6px solid var(--main-color);
     }
-    .disability-support ul li .shiinomi .text-box{
+    #disability-support ul li .shiinomi .text-box{
         border-top: none;
         border-left: 6px solid var(--main-color);
     }
@@ -301,15 +301,15 @@ shiinomi
 elderly-care
 ************/
 
-.elderly-care {
+#elderly-care {
     border: 4px solid var(--main-color);
 }
 
-.elderly-care h2 {
+#elderly-care h2 {
     color: var(--sub-color);
 }
 
-.elderly-care h2::before {
+#elderly-care h2::before {
     content: "";
     background-color: var(--main-color);
     border-radius: 100vh;
@@ -324,32 +324,32 @@ elderly-care
 muroganosato
 ********/
 
-.elderly-care ul li .muroganosato{
+#elderly-care ul li .muroganosato{
     border: 2px solid var(--main-color);
     color: var(--main-color);
 }
 
-.elderly-care ul li .muroganosato img{
+#elderly-care ul li .muroganosato img{
     object-position: 50% 43%;
 }
 
-.elderly-care ul li .muroganosato .text-box{
+#elderly-care ul li .muroganosato .text-box{
     border-top: 2px solid var(--main-color);
 }
 
-.elderly-care ul li .muroganosato .text-box.title-wr h3 span {
+#elderly-care ul li .muroganosato .text-box.title-wr h3 span {
     display: inline-block;
 }
 
-.elderly-care ul li .muroganosato .text-box .small-title::before{
+#elderly-care ul li .muroganosato .text-box .small-title::before{
     background-color: var(--main-color);
 }
 
 @media(min-width:1100px) {
-    .elderly-care ul li .muroganosato{
+    #elderly-care ul li .muroganosato{
         border: 6px solid var(--main-color);
     }
-    .elderly-care ul li .muroganosato .text-box{
+    #elderly-care ul li .muroganosato .text-box{
         border-top: none;
         border-left: 6px solid var(--main-color);
     }
@@ -362,37 +362,37 @@ elderly-care
 day-service
 ********/
 
-.elderly-care ul li .day-service{
+#elderly-care ul li .day-service{
     border: 2px solid var(--main-color);
     color: var(--main-color);
 }
 
-.elderly-care ul li .day-service img{
+#elderly-care ul li .day-service img{
     object-position: 50% 72%;
 }
 
-.elderly-care ul li .day-service .text-box{
+#elderly-care ul li .day-service .text-box{
     border-top: 2px solid var(--main-color);
 }
 
-.elderly-care ul li .day-service .text-box .title-wr h3 span{
+#elderly-care ul li .day-service .text-box .title-wr h3 span{
     display: inline-block;
     font-size: clamp(20px, 3vw, 24px);
 }
 
-.elderly-care ul li .day-service .text-box .small-title::before{
+#elderly-care ul li .day-service .text-box .small-title::before{
     background-color: var(--main-color);
 }
 
 @media(min-width:1100px) {
-    .elderly-care ul li .day-service{
+    #elderly-care ul li .day-service{
         border: 6px solid var(--main-color);
     }
-    .elderly-care ul li .day-service .text-box{
+    #elderly-care ul li .day-service .text-box{
         border-top: none;
         border-left: 6px solid var(--main-color);
     }
-    .elderly-care ul li .day-service .text-box .title-wr h3 span{
+    #elderly-care ul li .day-service .text-box .title-wr h3 span{
     font-size: 32px;
 }
 }
@@ -404,37 +404,37 @@ elderly-care
 ikiikikaigo
 ********/
 
-.elderly-care ul li .ikiikikaigo{
+#elderly-care ul li .ikiikikaigo{
     border: 2px solid var(--main-color);
     color: var(--main-color);
 }
 
-.elderly-care ul li .ikiikikaigo img{
+#elderly-care ul li .ikiikikaigo img{
     object-position: 50% 22%;
 }
 
-.elderly-care ul li .ikiikikaigo .text-box{
+#elderly-care ul li .ikiikikaigo .text-box{
     border-top: 2px solid var(--main-color);
 }
 
-.elderly-care ul li .ikiikikaigo .text-box .title-wr h3{
+#elderly-care ul li .ikiikikaigo .text-box .title-wr h3{
     font-size: clamp(22px, 3vw, 28px);
 }
 
 
-.elderly-care ul li .ikiikikaigo .text-box .small-title::before{
+#elderly-care ul li .ikiikikaigo .text-box .small-title::before{
     background-color: var(--main-color);
 }
 
 @media(min-width:1100px) {
-    .elderly-care ul li .ikiikikaigo{
+    #elderly-care ul li .ikiikikaigo{
         border: 6px solid var(--main-color);
     }
-    .elderly-care ul li .ikiikikaigo .text-box{
+    #elderly-care ul li .ikiikikaigo .text-box{
         border-top: none;
         border-left: 6px solid var(--main-color);
     }
-    .elderly-care ul li .ikiikikaigo .text-box .title-wr h3{
+    #elderly-care ul li .ikiikikaigo .text-box .title-wr h3{
     font-size: 36px;
 }
 }
@@ -443,15 +443,15 @@ ikiikikaigo
 consultation
 ************/
 
-.consultation {
+#consultation {
     border: 4px solid var(--main-color);
 }
 
-.consultation h2 {
+#consultation h2 {
     color: var(--sub-color);
 }
 
-.consultation h2::before {
+#consultation h2::before {
     content: "";
     background-color: var(--main-color);
     border-radius: 100vh;
@@ -466,28 +466,28 @@ consultation
 kawanishi
 ********/
 
-.consultation ul li .kawanishi{
+#consultation ul li .kawanishi{
     border: 2px solid var(--main-color);
     color: var(--main-color);
 }
 
-.consultation ul li .kawanishi img{
+#consultation ul li .kawanishi img{
     object-position: 50% 40%;
 }
 
-.consultation ul li .kawanishi .text-box{
+#consultation ul li .kawanishi .text-box{
     border-top: 2px solid var(--main-color);
 }
 
-.consultation ul li .kawanishi .text-box .small-title::before{
+#consultation ul li .kawanishi .text-box .small-title::before{
     background-color: var(--main-color);
 }
 
 @media(min-width:1100px) {
-    .consultation ul li .kawanishi{
+    #consultation ul li .kawanishi{
         border: 6px solid var(--main-color);
     }
-    .consultation ul li .kawanishi .text-box{
+    #consultation ul li .kawanishi .text-box{
         border-top: none;
         border-left: 6px solid var(--main-color);
     }
@@ -500,32 +500,32 @@ consultation
 chiikihoukatsushien
 ********/
 
-.consultation ul li .chiikihoukatsushien{
+#consultation ul li .chiikihoukatsushien{
     border: 2px solid var(--main-color);
     color: var(--main-color);
 }
 
-.consultation ul li .chiikihoukatsushien .text-box{
+#consultation ul li .chiikihoukatsushien .text-box{
     border-top: 2px solid var(--main-color);
 }
 
-.consultation ul li .chiikihoukatsushien .text-box .title-wr h3{
+#consultation ul li .chiikihoukatsushien .text-box .title-wr h3{
     font-size: clamp(22px, 3vw, 28px);
 }
 
-.consultation ul li .chiikihoukatsushien .text-box .small-title::before{
+#consultation ul li .chiikihoukatsushien .text-box .small-title::before{
     background-color: var(--main-color);
 }
 
 @media(min-width:1100px) {
-    .consultation ul li .chiikihoukatsushien{
+    #consultation ul li .chiikihoukatsushien{
         border: 6px solid var(--main-color);
     }
-    .consultation ul li .chiikihoukatsushien .text-box{
+    #consultation ul li .chiikihoukatsushien .text-box{
         border-top: none;
         border-left: 6px solid var(--main-color);
     }
-    .consultation ul li .chiikihoukatsushien .text-box .title-wr h3{
+    #consultation ul li .chiikihoukatsushien .text-box .title-wr h3{
     font-size: 36px
 }
 }
