@@ -129,7 +129,7 @@ main {
 .navi li {
     list-style: none;
     margin: 12px;
-    border-bottom: 1px solid #9F2A00;
+    border-bottom: 1px solid var(--main-color);
     padding: 0 8px 4px;
 }
 
@@ -140,8 +140,6 @@ main {
 }
 
 .navi li .btn-1::before {
-    background: url(navi-arrow.svg) no-repeat;
-    background-size: contain;
     width: clamp(16px, 13%, 24PX);
 }
 
@@ -200,21 +198,29 @@ body a {
 }
 
 .btn-1 {
-    text-decoration: none;
-    color: var(--font-color);
     display: flex;
-    align-items: center;
-    margin: 1em 0;
     gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+    color: var(--font-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .btn-1::before {
-    display: block;
-    content: "";
-    background: url(btn-arrow.svg) no-repeat;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    content: "→";
+    background: var(--main-color,var(--main)) no-repeat;
     width: 24px;
     aspect-ratio: 1;
     background-size: contain;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
 }
 
 .btn-2 {
