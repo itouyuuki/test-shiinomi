@@ -28,9 +28,9 @@ $og_image = 'fv.jpg';
 </head>
 <body>
 <?php include $base . '/header.php'; ?>
-<main>
+<main id="main-contents">
 <section id="disability-support" class="boxes-wr disability-support">
-    <h2>障がい者支援施設</h2>
+    <h2 class="facility-name-head">障がい者支援施設</h2>
     <ul>
         <li>
             <a href="shiinomien/" class="box shiinomien">
@@ -99,7 +99,7 @@ $og_image = 'fv.jpg';
     </ul>
 </section>
 <section id="elderly-care"class="boxes-wr elderly-care">
-    <h2>高齢者福祉施設</h2>
+    <h2 class="facility-name-head">高齢者福祉施設</h2>
     <ul>
         <li>
             <a href="muroganosato/" class="box muroganosato">
@@ -155,7 +155,7 @@ $og_image = 'fv.jpg';
     </ul>
 </section>
 <section id="consultation" class="boxes-wr consultation">
-    <h2>相談</h2>
+    <h2 class="facility-name-head">相談</h2>
     <ul>
         <li>
             <a href="kawanishi/" class="box kawanishi">

@@ -30,7 +30,7 @@ $og_image = 'shiinoki.jpg';
 <body class="about">
 <?php include $base . '/header.php'; ?>
 <main>
-<section class="beginning">
+<section class="beginning" id="main-contents">
     <h2>小さな若木から始まった、しいのみ会の物語</h2>
     <div class="about-wr">
         <img src="shiinoki.jpg" alt="">
@@ -49,7 +49,9 @@ $og_image = 'shiinoki.jpg';
         小さな芽が少しずつ伸びていくように、人も地域も支えながら育っていく。<br>
         そんな温もりを、ここから感じていただけたら嬉しいです。
     </p>
-    <?php include $base . '/wp-blog.php' ?>
+    <div class="wp-blog">
+        <?php include $base . '/wp-blog.php' ?>
+    </div>
     <a href="<?= $base ?>/wp/category/blog/" class="btn-2">もっと見る</a>
 </section>
 <section class="philosophy">

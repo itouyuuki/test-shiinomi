@@ -72,7 +72,7 @@ $og_image = 'fv.jpg';
                 <span class="highlight">TEL</span><a class="call" href="tel:0268-27-3166">:0268-27-3166</a><span class="bp"><span class="highlight">FAX</span>:0268-27-3175</span>
             </p>
         </div>
-        <div class="outline-content">
+        <div class="outline-content" id="main-contents">
             <img src="fv.jpg" alt="" class="fv-image">
             <div class="inner">
                 <h2>
@@ -93,7 +93,7 @@ $og_image = 'fv.jpg';
                 <p class="before-line">しいのみ通信</p>
             </div>
         </hgroup>
-        <div class="news wp-content-scroll">
+        <div class="wp-news wp-content-scroll">
             <?php include $base . '/wp-news.php' ?>
         </div>
         <div class="wp-more">
@@ -138,7 +138,7 @@ $og_image = 'fv.jpg';
                 <p class="before-line">しいのみ日和</p>
             </div>
         </hgroup>
-        <div class="blog wp-content-scroll">
+        <div class="wp-blog wp-content-scroll">
             <?php include $base . '/wp-blog.php' ?>
         </div>
         <div class="wp-more">

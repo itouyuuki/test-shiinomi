@@ -18,7 +18,7 @@
     display: block;
     min-width: 24px;
     aspect-ratio: 4/5;
-    background-image: url(leaf.svg);
+    background-image: url(../leaf.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }

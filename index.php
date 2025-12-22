@@ -59,16 +59,16 @@ $og_image = 'fv.jpg';
         <img src="fv-man.png" alt="">
     </div>
 </section>
-<section class="news">
-    <div class="boxes">
-        <div class="content">
-            <h2>しいのみ通信</h2>
-            <p>上田しいのみ会や、各施設からのお知らせをお届けします。</p>
-            <a href="<?= $base ?>/wp/news/" class="btn-1">
-                <p>もっと見る</p>
-            </a>
-        </div>
-        <ul class="kari"></ul>
+<section class="news boxes" id="main-contents">
+    <div class="content">
+        <h2>しいのみ通信</h2>
+        <p>上田しいのみ会や、各施設からのお知らせをお届けします。</p>
+        <a href="<?= $base ?>/wp/news/" class="btn-1">
+            <p>もっと見る</p>
+        </a>
+    </div>
+    <div class="wp-news">
+        <?php include $base . '/wp-news.php' ?>
     </div>
 </section>
 <section id="about" class="boxes">
@@ -94,7 +94,7 @@ $og_image = 'fv.jpg';
 <section class="facility">
     <h2>施設紹介</h2>
     <div class="facility-list disability-support">
-        <h3>障害者支援施設</h3>
+        <h3 class="facility-name-head">障害者支援施設</h3>
         <ul class="list">
             <li class="shiinomien">
                 <a href="">
@@ -143,7 +143,7 @@ $og_image = 'fv.jpg';
         </ul>
     </div>
     <div class="facility-list elderly-care">
-        <h3>高齢者福祉施設</h3>
+        <h3 class="facility-name-head">高齢者福祉施設</h3>
         <ul class="list">
             <li class="muroganosato">
                 <a href="">
@@ -181,7 +181,7 @@ $og_image = 'fv.jpg';
         </ul>
     </div>
     <div class="facility-list consultation">
-        <h3>相談</h3>
+        <h3 class="facility-name-head">相談</h3>
         <ul class="list">
             <li class="kawanishi">
                 <a href="">
@@ -222,7 +222,9 @@ $og_image = 'fv.jpg';
                 </a>
             </div>
         </div>
-        <ul class="kari"></ul>
+        <div class="wp-blog">
+            <?php include $base . '/wp-blog.php' ?>
+        </div>
     </div>
 </section>
 <section class="recruit">

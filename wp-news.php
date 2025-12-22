@@ -5,7 +5,7 @@
         <li onclick="location.href='<?= get_the_permalink() ?>'">
             <a href="<?= get_the_permalink(); ?>"class="item">
                 <img src="<?= get_thumbnail_or_default() ?>" alt="" class="thum-img">
-                <div class="inner">
+                <div class="wp-inner">
                     <?php 
                     $terms = get_the_terms(get_the_ID(), 'category');
                     if (!empty($terms) && !is_wp_error($terms)) {
