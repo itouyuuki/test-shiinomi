@@ -96,7 +96,7 @@ $og_image = 'fv.jpg';
         <div class="news wp-content-scroll">
             <?php include $base . '/wp-news.php' ?>
         </div>
-        <div class="more">
+        <div class="wp-more">
             <div class="arrows">
                 <button class="arrow-btn prev">
                     <img src="<?= $base ?>/navi-arrow.svg" alt="">
@@ -141,7 +141,17 @@ $og_image = 'fv.jpg';
         <div class="blog wp-content-scroll">
             <?php include $base . '/wp-blog.php' ?>
         </div>
-        <a href="<?= $base ?>/wp/category/blog/" class="btn-2">もっと見る</a>
+        <div class="wp-more">
+            <div class="arrows">
+                <button class="arrow-btn prev">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+                <button class="arrow-btn next">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+            </div>
+            <a href="<?= $base ?>/wp/category/blog/" class="btn-2">もっと見る</a>
+        </div>
     </section>
     <section id="support">
         <hgroup class="content-head">
@@ -357,5 +367,6 @@ $og_image = 'fv.jpg';
 </main>
 <?php include $base . '/footer.php'; ?>
 <script src="popup.js"></script>
+<script src="<?= $base ?>/scroll.js"></script>
 </body>
 </html>

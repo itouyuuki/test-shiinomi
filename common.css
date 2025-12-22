@@ -808,11 +808,11 @@ FV
 
 .wp-contents-list .inner .date {
     text-align: right;
-    color: var(--font-color);
+    color: #9E8473;
     margin-left: auto;
 }
 
-.wp-contents-list h3.title {
+.wp-contents-list .article-title {
     color: var(--font-color);
     text-decoration: underline;
     margin: 4px 0;
@@ -852,7 +852,25 @@ FV
     gap: 0 12px;
 }
 
+.blog .wp-contents-list .inner .date {
+    color: var(--font-color);
+}
+
 /** scroll **/
+.wp-more .arrows {
+    display: none;
+    gap: 20px;
+}
+
+.wp-more .arrows .arrow-btn {
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+.wp-more .arrows .arrow-btn.prev {
+    transform: rotate(180deg);
+}
+
 @media(min-width:600px) {
     .wp-content-scroll .wp-contents-list {
         overflow-x: scroll;
@@ -861,4 +879,8 @@ FV
     .wp-content-scroll .wp-contents-list .item {
         width: 300px;
     }
+
+    .wp-more .arrows {
+       display: flex;
+    }  
 }

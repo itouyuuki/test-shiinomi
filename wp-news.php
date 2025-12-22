@@ -16,7 +16,7 @@
                             </p>
                         <?php }
                     } ?>
-                    <h3 class="title">
+                    <h3 class="article-title">
                         <?php
                         $title = get_the_title();
                         if(mb_strlen($title, 'UTF-8')>30){
