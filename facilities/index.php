@@ -3,7 +3,7 @@ $base = '..';
 require_once $base . '/meta.php';
 $title = '施設紹介';
 $description = '上田しいのみ会が運営する、障害福祉・高齢者福祉・相談支援の9施設を紹介します。施設一覧から詳細をご覧いただけます。';
-$local_path = '/facilities/'; // サイトのルートからのパスを記入
+$local_path = '/facilities/';// サイトのルートからのパスを記入
 $og_image = 'fv.jpg';
 ?>
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ $og_image = 'fv.jpg';
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= "$title | $site_name" ?></title>
 <meta name="description" content="<?= $description ?>">
-<link rel="icon" href="<?= $base . $favicon ?>">  
+<link rel="icon" href="<?= $base . $favicon ?>">
 <link rel="canonical" href="<?= $site_url . $local_path ?>">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="<?= $site_name ?>">
@@ -29,11 +29,11 @@ $og_image = 'fv.jpg';
 <body>
 <?php include $base . '/header.php'; ?>
 <main>
-<section class="boxes-wr disability-support">
+<section id="disability-support" class="boxes-wr disability-support">
     <h2>障がい者支援施設</h2>
     <ul>
         <li>
-            <a href="/facilities/shiinomien/" class="box shiinomien">
+            <a href="shiinomien/" class="box shiinomien">
                 <img width="1500" height="1000" src="../shiinomien.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">障がい者支援施設</p>
@@ -49,7 +49,7 @@ $og_image = 'fv.jpg';
             </a>
         </li>
         <li>
-            <a href="/facilities/tsumuginoie/" class="box tsumuginoie">
+            <a href="tsumuginoie/" class="box tsumuginoie">
                 <img width="1500" height="1000" src="../tsumuginoie.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">障がい者支援施設</p>
@@ -65,7 +65,7 @@ $og_image = 'fv.jpg';
             </a>
         </li>
         <li>
-            <a href="/facilities/ryogoen/" class="box ryogoen">
+            <a href="ryogoen/" class="box ryogoen">
                 <img width="1500" height="1000" src="../ryogoen.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">障がい者支援施設</p>
@@ -82,8 +82,8 @@ $og_image = 'fv.jpg';
             </a>
         </li>
         <li>
-            <a href="/facilities/shiinomi/" class="box shiinomi">
-                <img width="1500" height="1000" src="../ryogoen.jpg" alt="">
+            <a href="shiinomi/" class="box shiinomi">
+                <img width="1200" height="630" src="../ogp.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">障がい者支援施設</p>
                     <div class="title-wr">
@@ -98,11 +98,11 @@ $og_image = 'fv.jpg';
         </li>
     </ul>
 </section>
-<section class="boxes-wr elderly-care">
+<section id="elderly-care"class="boxes-wr elderly-care">
     <h2>高齢者福祉施設</h2>
     <ul>
         <li>
-            <a href="/facilities/muroganosato/" class="box muroganosato">
+            <a href="muroganosato/" class="box muroganosato">
                 <img width="1500" height="1000" src="../muroganosato.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">高齢者福祉施設</p>
@@ -119,7 +119,7 @@ $og_image = 'fv.jpg';
             </a>
         </li>
         <li>
-            <a href="/facilities/day-service/" class="box day-service">
+            <a href="day-service/" class="box day-service">
                 <img width="1500" height="1000" src="../day-service.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">高齢者福祉施設</p>
@@ -138,7 +138,7 @@ $og_image = 'fv.jpg';
             </a>
         </li>
         <li>
-            <a href="/facilities/ikiikikaigo/" class="box ikiikikaigo">
+            <a href="ikiikikaigo/" class="box ikiikikaigo">
                 <img width="1500" height="1000" src="../ikiikikaigo.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">高齢者福祉施設</p>
@@ -154,11 +154,11 @@ $og_image = 'fv.jpg';
         </li>
     </ul>
 </section>
-<section class="boxes-wr consultation">
+<section id="consultation" class="boxes-wr consultation">
     <h2>相談</h2>
     <ul>
         <li>
-            <a href="/facilities/kawanishi/" class="box kawanishi">
+            <a href="kawanishi/" class="box kawanishi">
                 <img width="1500" height="1000" src="../kawanishi.jpg" alt="">
                 <div class="text-box">
                     <p class="small-title">相談</p>
