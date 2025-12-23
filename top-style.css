@@ -417,7 +417,6 @@ a {
     right: 0;
 }
 
-
 @media (min-width:700px) {
     #about .inner {
         padding: 0 40px;
@@ -683,7 +682,6 @@ a {
     margin: 0 auto;
     overflow: hidden;
     border-radius: 20px;
-    padding: 0 8px;
 }
 
 .recruit img {
@@ -731,18 +729,12 @@ a {
     filter: drop-shadow(0 0 10px #b45038);
 }
 
-.recruit .content h2 {
+.recruit .content .head-leaf {
     margin-bottom: 10px;
 }
 
-.recruit .content h2::before {
-    content: "";
-    display: block;
-    width: clamp(1.2rem, 2vw, 1.875rem);
-    aspect-ratio: 5 / 6;
+.recruit .content .head-leaf::before {
     background-image: url(leaf-w.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
     margin: -20px 0 0px -30px;
 }
 

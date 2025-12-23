@@ -231,7 +231,7 @@ $og_image = 'fv.jpg';
     <img src="top-recruit.jpg" alt="">
     <div class="inner">
         <div class="content">
-            <h2>採用情報</h2>
+            <h2 class="head-leaf">採用情報</h2>
             <p>
                 人を想い、人に寄り添う。その気持ちが、福祉の第一歩です。<br>
                 上田しいのみ会では、障がいのある方や高齢の方が笑顔で暮らせる場所を、地域と共に育てていく仲間を募集しています。

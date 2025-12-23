@@ -31,7 +31,7 @@ $og_image = 'shiinoki.jpg';
 <?php include $base . '/header.php'; ?>
 <main>
 <section class="beginning" id="main-contents">
-    <h2>小さな若木から始まった、しいのみ会の物語</h2>
+    <h2 class="head-leaf">小さな若木から始まった、しいのみ会の物語</h2>
     <div class="about-wr">
         <img src="shiinoki.jpg" alt="">
         <p class="text">
@@ -42,7 +42,7 @@ $og_image = 'shiinoki.jpg';
     </div>
 </section>
 <section class="to-blog">
-    <h2>今日も、しいのみ日和。</h2>
+    <h2 class="head-leaf">今日も、しいのみ日和。</h2>
     <p class="text">
         「しいのみ日和」は、しいのみ会で過ごす日常のひとこまをお届けするブログです。<br>
         利用者さんの笑顔、季節の行事、地域とのふれあい――それらすべてが、私たちの“今”を形づくっています。<br>
@@ -55,7 +55,7 @@ $og_image = 'shiinoki.jpg';
     <a href="<?= $base ?>/wp/category/blog/" class="btn-2">もっと見る</a>
 </section>
 <section class="philosophy">
-    <h2>法人理念・ご挨拶</h2>
+    <h2 class="head-leaf">法人理念・ご挨拶</h2>
     <ul class="content-list">
         <li>
             <h3>法人理念</h3>
@@ -105,7 +105,7 @@ $og_image = 'shiinoki.jpg';
     </ul>
 </section>
 <section id="ayumi">
-    <h2>法人の歩み</h2>
+    <h2 class="head-leaf">法人の歩み</h2>
     <dl id="ayumi-list">
         <div>
             <dt>1977年</dt>
@@ -218,7 +218,7 @@ $og_image = 'shiinoki.jpg';
     <button id="view-more" class="btn-2"><span>もっと見る</span></button>
 </section>
 <section class="corporate-info">
-    <h2>法人情報・運営について</h2>
+    <h2 class="head-leaf">法人情報・運営について</h2>
     <p class="text">
         法人の運営に関する情報をまとめています。<br>
         決算報告や組織体制、苦情への対応、個人情報保護方針などを公開し、透明性のある運営を心がけています。
