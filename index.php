@@ -1,6 +1,8 @@
 <?php
 $base = '.';
 require_once $base . '/meta.php';
+require_once $base . '/wp-get-news.php';
+require_once $base . '/wp-get-blog.php';
 $title = '社会福祉法人 上田しいのみ会｜長野県上田市';
 $description = '上田しいのみ会は、障がいのある方や高齢の方が、地域の中で安心して暮らせるように支援する社会福祉法人です。９つの施設で構成されており、地域やボランティアの方々と共に、あたたかく開かれた福祉活動を続けています。';
 $local_path = '/'; // サイトのルートからのパスを記入
@@ -57,16 +59,16 @@ $og_image = 'fv.jpg';
         <img src="fv-man.png" alt="">
     </div>
 </section>
-<section class="news">
-    <div class="boxes">
-        <div class="content">
-            <h2>しいのみ通信</h2>
-            <p>上田しいのみ会や、各施設からのお知らせをお届けします。</p>
-            <a href="<?= $base ?>/wp/news/" class="btn-arrow">
-                <p>もっと見る</p>
-            </a>
-        </div>
-        <ul class="kari"></ul>
+<section class="news boxes" id="main-contents">
+    <div class="content">
+        <h2>しいのみ通信</h2>
+        <p>上田しいのみ会や、各施設からのお知らせをお届けします。</p>
+        <a href="<?= $base ?>/wp/news/" class="btn-1">
+            <p>もっと見る</p>
+        </a>
+    </div>
+    <div class="wp-news">
+        <?php include $base . '/wp-news.php' ?>
     </div>
 </section>
 <section id="about" class="boxes">
@@ -79,7 +81,7 @@ $og_image = 'fv.jpg';
             <p class="con">
                 上田しいのみ会は、障がいのある方や高齢の方が、地域の中で安心して暮らせるように支援する社会福祉法人です。利用者一人ひとりが笑顔で、自分らしく生きられるように。地域やボランティアの方々と共に、あたたかく開かれた福祉活動を続けています。
             </p>
-            <a href="" class="btn-arrow">
+            <a href="" class="btn-1">
                 <p>上田しいのみ会について</p>
             </a>
         </div>
@@ -92,7 +94,7 @@ $og_image = 'fv.jpg';
 <section class="facility">
     <h2>施設紹介</h2>
     <div class="facility-list disability-support">
-        <h3>障害者支援施設</h3>
+        <h3 class="facility-name-head">障害者支援施設</h3>
         <ul class="list">
             <li class="shiinomien">
                 <a href="">
@@ -141,7 +143,7 @@ $og_image = 'fv.jpg';
         </ul>
     </div>
     <div class="facility-list elderly-care">
-        <h3>高齢者福祉施設</h3>
+        <h3 class="facility-name-head">高齢者福祉施設</h3>
         <ul class="list">
             <li class="muroganosato">
                 <a href="">
@@ -179,7 +181,7 @@ $og_image = 'fv.jpg';
         </ul>
     </div>
     <div class="facility-list consultation">
-        <h3>相談</h3>
+        <h3 class="facility-name-head">相談</h3>
         <ul class="list">
             <li class="kawanishi">
                 <a href="">
@@ -215,24 +217,26 @@ $og_image = 'fv.jpg';
                     『しいのみ日和』は、上田しいのみ会の日々の出来事や、地域の皆さんとのふれあいをお届けするブログです。<br>
                     笑顔あふれる毎日を、少し覗いてみませんか？
                 </p>
-                <a href="" class="btn-arrow">
+                <a href="" class="btn-1">
                     <p>もっと見る</p>
                 </a>
             </div>
         </div>
-        <ul class="kari"></ul>
+        <div class="wp-blog">
+            <?php include $base . '/wp-blog.php' ?>
+        </div>
     </div>
 </section>
 <section class="recruit">
     <img src="top-recruit.jpg" alt="">
     <div class="inner">
         <div class="content">
-            <h2>採用情報</h2>
+            <h2 class="head-leaf">採用情報</h2>
             <p>
                 人を想い、人に寄り添う。その気持ちが、福祉の第一歩です。<br>
                 上田しいのみ会では、障がいのある方や高齢の方が笑顔で暮らせる場所を、地域と共に育てていく仲間を募集しています。
             </p>
-            <a href="" class="btn-arrow">
+            <a href="" class="btn-1">
                 <p>採用情報を見る</p>
             </a>
         </div>

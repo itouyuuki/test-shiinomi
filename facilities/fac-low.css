@@ -2,9 +2,10 @@
 下層ページ共通
 ************/
 body {
-    max-width: 1200px;
+    max-width: var(--mw-1200);
     margin: 0 auto;
     font-weight: 500;
+    padding: 0 18px;
 }
 
 main {
@@ -22,41 +23,6 @@ main {
     max-width: 40em;
 }
 
-.content .content-head {
-    width: 100%;
-    border-bottom: #E7E8E7 solid 2px;
-    display: block;
-    margin-bottom: 1em;
-}
-
-.content .content-head .head-wr {
-    color: var(--main-color);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-bottom: solid 2px var(--main-color);
-    width: fit-content;
-    padding: 0 10px;
-    margin-bottom: -2px;
-}
-
-.content .content-head .before-line {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.content .content-head .before-line::before {
-    content: "-";
-    display: block;
-}
-
-
-.content .content-head h2 {
-    margin: 0;
-}
-
 .content img {
     width: min(100%,420px);
     margin: 0;
@@ -71,10 +37,6 @@ main {
 
 .btn-2 {
     font-size: clamp(18px,3.5vw,22px);
-}
-
-.btn-2::after {
-    content:">";
 }
 
 /** fv **/
@@ -147,6 +109,10 @@ main {
 }
 
 /** news **/
+#news .content-inner img {
+    margin: 1em auto;
+}
+
 #news .news-wr h3 {
     font-size: clamp(20px,4vw,24px);
     margin: 10px 0;
@@ -165,7 +131,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 6px 2%;
+    gap: 6px 1%;
     margin: 1.5em 0;
 }
 
@@ -299,49 +265,6 @@ main {
     font-size: clamp(16px, 3.5vw, 20px);
 }
 
-.info-table {
-    width: 100%;
-
-}
-
-.info-table th,
-.info-table td {
-    display: block;
-    width: 100%;
-    border: 2px solid var(--main-color);
-    font-size: 16px;
-}
-
-.info-table th {
-    background: var(--main-color);
-    color: #ffffff;
-    white-space: nowrap;
-    border-radius: 6px 6px 0 0;
-    padding: 14px 20px;
-    margin-top: 0;
-    border-right: 0;
-    border-bottom: 0;
-    text-align: center;
-    min-width: 180px;
-}
-
-.info-table tr {
-    display: block;
-    margin-bottom: 16px;
-}
-
-.info-table td {
-    border-top: 0;
-    padding: 14px;
-    text-align: center;
-    background: #ffffff;
-    padding: 10px 10px 10px 20px;
-    border-radius: 0 0 6px 6px;
-    font-family: var(--text-font);
-    line-height: 1.6;
-    letter-spacing: 1px;
-}
-
 .sub-table {
     border-spacing: 0;
 }
@@ -380,41 +303,22 @@ main {
 }
 
 @media (min-width:500px) {
-    .info-table {
-        border-spacing: 0 10px;
-    }
-
     .sub-table {
         border-spacing: 0;
+    }
+
+    .sub-table tr {
+        display: table-row;
     }
 
     .sub-table tr td {
         border-top: 0;
         width: 50%;
-    }
-
-    .info-table tr {
-        display: table-row;
-        margin-bottom: 0;
-    }
-
-    .info-table th,
-    .info-table td {
         display: table-cell;
-        width: auto;
     }
 
-    .info-table th,
     .sub-table th {
         border-radius: 6px 0 0 6px;
-    }
-
-    .info-table td {
-        border-radius: 0 6px 6px 0;
-        border: 2px solid var(--main-color);
-        border-left: 0;
-        text-align: left;
-        width: 80%;
     }
 
     .sub-table tbody tr:last-child td:nth-child(1) {
@@ -437,7 +341,7 @@ main {
 }
 
 #fees .way {
-    color: #9f2a00;
+    color: var(--main-color);
     margin-top: 16px;
     line-height: 2;
 }
