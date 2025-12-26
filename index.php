@@ -1,8 +1,8 @@
 <?php
 $base = '.';
 require_once $base . '/meta.php';
-//require_once $base . '/wp-get-news.php';
-//require_once $base . '/wp-get-blog.php';
+// require_once $base . '/wp-get-news.php';
+// require_once $base . '/wp-get-blog.php';
 $title = '社会福祉法人 上田しいのみ会｜長野県上田市';
 $description = '上田しいのみ会は、障がいのある方や高齢の方が、地域の中で安心して暮らせるように支援する社会福祉法人です。９つの施設で構成されており、地域やボランティアの方々と共に、あたたかく開かれた福祉活動を続けています。';
 $local_path = '/'; // サイトのルートからのパスを記入
