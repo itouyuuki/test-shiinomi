@@ -2,8 +2,8 @@
 $base = '../..';
 $facility_base ='..';
 require_once $base . '/meta.php';
-require_once $base . '/wp-get-news.php';
-require_once $base . '/wp-get-blog.php';
+// require_once $base . '/wp-get-news.php';
+// require_once $base . '/wp-get-blog.php';
 $title = '上田しいのみ園＿施設紹介';
 $description = '上田しいのみ園は、障害者自立支援法に基づく「障害者支援施設」です。入所支援や生活介護、短期入所を通じて、一人ひとりのペースに寄り添いながら、安心して過ごせる時間を支えています。';
 $local_path = '/facilities/shiinomien/'; // サイトのルートからのパスを記入
