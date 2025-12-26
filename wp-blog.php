@@ -1,7 +1,7 @@
                 <ul class="wp-contents-list">
                                 <li onclick="location.href='http://localhost/shiinomikai.com/wp/blog/blog-shiinomien-2/'">
                 <a href="http://localhost/shiinomikai.com/wp/blog/blog-shiinomien-2/" class="item">
-                    <img src="http://localhost/shiinomikai.com/wp/wp-content/themes/shiinomikai-wptheme/img/no-image.png" alt="" class="thum-img">
+                    <img src="<?= $base ?>/fv.jpg" alt="" class="thum-img">
                     <div class="wp-inner">
                         <div class="wp-meta-wr">
                                                                 <p class="shiinomien category-name">
@@ -10,13 +10,13 @@
                                 2025/12/19                            </p>
                         </div>
                         <h3 class="article-title">
-                            a                        </h3>
+                            タイトル                        </h3>
                     </div>
                 </a>
             </li>
                                 <li onclick="location.href='http://localhost/shiinomikai.com/wp/blog/blog-shiinomien/'">
                 <a href="http://localhost/shiinomikai.com/wp/blog/blog-shiinomien/" class="item">
-                    <img src="http://localhost/shiinomikai.com/wp/wp-content/themes/shiinomikai-wptheme/img/no-image.png" alt="" class="thum-img">
+                    <img src="<?= $base ?>/fv.jpg" alt="" class="thum-img">
                     <div class="wp-inner">
                         <div class="wp-meta-wr">
                                                                 <p class="shiinomien category-name">
@@ -25,13 +25,13 @@
                                 2025/12/19                            </p>
                         </div>
                         <h3 class="article-title">
-                            title                        </h3>
+                            タイトル                        </h3>
                     </div>
                 </a>
             </li>
                                 <li onclick="location.href='http://localhost/shiinomikai.com/wp/blog/blog-day-service/'">
                 <a href="http://localhost/shiinomikai.com/wp/blog/blog-day-service/" class="item">
-                    <img src="http://localhost/shiinomikai.com/wp/wp-content/themes/shiinomikai-wptheme/img/no-image.png" alt="" class="thum-img">
+                    <img src="<?= $base ?>/fv.jpg" alt="" class="thum-img">
                     <div class="wp-inner">
                         <div class="wp-meta-wr">
                                                                 <p class="day-service category-name">
