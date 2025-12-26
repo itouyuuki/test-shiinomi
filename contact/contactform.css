@@ -1,0 +1,198 @@
+main {
+    max-width: 900px;
+    padding: 0 16px;
+}
+
+.contactform {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--main);
+    font-family: var(--nomal-font);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin: 0 auto 30px;
+}
+
+h1::after {
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: var(--main) solid;
+    position: absolute;
+    width: 150px;
+    margin: auto;
+}
+
+.contactform .text ,#confirm .text {
+    letter-spacing: 0.02em;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+dl div {
+    padding: 8px 0;
+}
+
+dt {
+    text-align: left;
+    font-weight: 500;
+    margin: 10px 0;
+    flex-basis: 36%;
+}
+
+dd {
+    margin: 0;
+    flex-basis: 50%;
+}
+
+
+/*------------------------
+　入力時の画面拡大を防ぐ
+------------------------*/
+select,
+input,
+textarea {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/*--- 入力欄（氏名等） ---*/
+dl input,dl select {
+    height: 50px;
+    width: 100%;
+}
+
+/*--- 入力欄（お問い合わせ内容） ---*/
+dl textarea {
+    height: 120px;
+    width: 100%;
+}
+
+/*--- 必須、任意のテキスト ---*/
+dl .l_required {
+    color: #fff;
+    background-color: var(--main);
+    border-radius: 10px;
+    margin-right: 15px;
+    padding: 5px 15px;
+}
+
+
+@media (min-width:650px) {
+    .contactform {
+        max-width: 900px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    .contactform p {
+        text-align: center;
+        max-width: unset;
+    }
+    
+    dl div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    dl select,dl input ,textarea{
+        width: 100%;
+    }
+    
+    dd {
+        margin: 10px;
+    }
+}
+
+/*------------------------
+　confirm.php
+------------------------*/
+p.mozi {
+    color: var(--main);
+    font-family: var(--nomal-font);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+}
+
+#confirm  dl div{
+    border-bottom: var(--main) solid 1px;
+}
+
+#confirm dt {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--main);
+}
+
+#confirm dd {
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+#confirm .fix_button {
+    background-color: #6E6E6E;
+    margin: 0;
+}
+
+#confirm .contact_button {
+    margin: 20px auto;
+}
+
+@media (min-width:600px) {
+    #confirm dl {
+        max-width: 900px;
+    }
+    
+    #confirm .btn_wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media (min-width:750px) {
+    #confirm .text {
+    max-width: 900px;
+    text-align: center;
+    }
+}
+
+/*------------------------
+　submit.php
+------------------------*/
+/*--- メール（デバッグ） ---*/
+pre {
+    text-align: left; 
+    border: 1px solid black;
+    white-space: pre-wrap;
+}
+
+#submit a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+@media (min-width:600px) {
+    #submit .text {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
