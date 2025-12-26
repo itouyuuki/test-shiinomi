@@ -1,0 +1,49 @@
+.link-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin: 30px 0;
+}
+
+.link-content > p {
+    width: 100%;
+    text-align: center;
+}
+
+.link-content > a {
+    margin: 0;
+}
+
+@media (min-width:1060px) {
+    .link-content > p {
+        width: fit-content;
+        min-width: 26rem;
+    }
+
+    .link-content > p {
+        text-align: left;
+    }
+}
+
+.info-table tr th.mark {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.info-table tr th.mark::before {
+    content: "◆";
+}
+
+@media (min-width:500px) {
+    #fees .info-table th {
+        text-align: left;
+    }
+}
+
+img.building {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}

@@ -1,0 +1,22 @@
+
+.outline h2 {
+    margin: 20px 0;
+}
+
+#blog h3 {
+    font-size: clamp(20px,4vw,24px);
+    margin: 10px 0;
+}
+
+#five-support h3 {
+    position: relative;
+    margin: 0;
+    font-size: clamp(20px,4vw,24px);
+    display: flex;
+    align-items: center;
+}
+
+#five-support .text {
+    margin: 0;
+    font-size: clamp(16px,3.5vw,20px);
+}
