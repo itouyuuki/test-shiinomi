@@ -196,6 +196,91 @@ main {
     }
 }
 
+.navipage .content {
+    max-width: 880px;
+    flex-grow: 1;
+}
+
+.facility-navi {
+    display: none;
+}
+
+.content details summary {
+    background-color: #9F2A00;
+    color: #fff;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 8px 20px;
+}
+
+.content details summary::after {
+    display: block;
+    content: "";
+    background: url(arrow-page-navi.svg) no-repeat;
+    width: 28px;
+    aspect-ratio: 1;
+    background-size: contain;
+}
+
+.content details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.navi {
+    padding: 4px 0;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 10PX;
+    box-shadow: 0 4px 10px rgba(159,42,0,0.2);
+}
+
+.navi li {
+    list-style: none;
+    margin: 12px;
+    border-bottom: 1px solid #9F2A00;
+    padding: 0 8px 4px;
+}
+
+.navi li .btn-1 {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.navi li .btn-1::before {
+    background: url(navi-arrow.svg) no-repeat;
+    background-size: contain;
+    width: clamp(16px, 13%, 24PX);
+}
+
+.navi li .btn-1 p {
+    margin: 0;
+}
+
+@media(min-width:750px){
+    .facility-navi {
+        display: block;
+        max-width: 300px;
+        min-width: 240px;
+        position: sticky;
+        height: fit-content;
+        top: 90px;
+        flex-grow: 1;
+    }
+
+    .content details {
+        display: none;
+    }    
+
+    .navipage {
+        display: flex;
+        gap: 32px;
+    }
+}
+
 body button {
     border: none;
     background-color: unset;
@@ -305,7 +390,6 @@ header
     right: 0;
     width: 100%;
     z-index: 25;
-
 }
 
 .main-scroll {
