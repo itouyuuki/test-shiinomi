@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+/*------------------------
+　入力時の画面拡大を防ぐ
+------------------------*/
+input,
+select,
+textarea {
+    font-size: 1rem;
+}
+
+
+
+/*------------------------
+　小見出し
+------------------------*/
+dt {
+    text-align: left;
+    font-weight: 600;
+}
+
+dl div {
+    margin: 30px auto;
+    max-width: 400px;
+}
+
+
+
+/*------------------------
+　index.php
+------------------------*/
+/*--- ラジオボタンとチェックボックス ---*/
+/*--- ○と□ ---*/
+dl .radio input,
+dl .checkbox input {
+    width: 16px;
+    height: auto;
+}
+
+dl .radio dd,
+dl .checkbox dd {
+    text-align: left;
+}
+
+dl .radio p,
+dl .checkbox p {
+    margin-left: 10%;
+}
+
+
+
+/*--- 入力欄（氏名等） ---*/
+dl input,
+dl select {
+    width: 80%;
+    max-width: 300px;
+    height: 40px;
+}
+
+dl .radio input {
+    height: auto;
+}
+
+dd {
+    text-align: center;
+}
+
+
+
+/*--- 入力欄（お問い合わせ内容） ---*/
+dl textarea {
+    width: 80%;
+    height: 120px;
+}
+
+
+
+/*--- 必須、任意のテキスト ---*/
+dl .l_required {
+    color: red;
+    margin: 0 8px;
+    padding: 0 8px;
+}
+
+
+
+@media (min-width:600px) {
+    dl div {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+        margin: 30px auto;
+    }
+
+    dt {
+        flex-basis: 40%;
+    }
+
+    dd {
+        flex-basis: 60%;
+    }
+}
+
+
+
+/*------------------------
+　confirm.php
+------------------------*/
+#confirm dd {
+    text-align: left;
+    margin-left: 30px;
+}
+
+
+
+/*------------------------
+　submit.php
+------------------------*/
+/*--- メール（デバッグ） ---*/
+pre {
+    text-align: left; border: 1px solid black;
+    white-space: pre-wrap;
+}

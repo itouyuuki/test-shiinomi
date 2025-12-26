@@ -1,0 +1,247 @@
+/************
+fasility-navi
+************/
+
+.navi {
+    box-shadow: 0 4px 10px rgba(0,134,85,0.2);
+}
+
+.navi li {
+    border-bottom: 1px solid #008655;
+}
+
+.navi li .btn-1::before {
+    background: url(../btn-arrow.svg) no-repeat;
+    background-size: contain;
+    width: clamp(16px, 13%, 24PX);
+}
+
+@media(min-width:750px){
+    .navipage {
+        gap: 50px;
+    }
+}
+
+/********
+content
+********/
+
+.content section {
+    margin: 0 auto 40px;
+}
+
+.content .title-wr {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #aaa;
+    width: 100%;
+}
+
+.content .title-wr h2 {
+    color: var(--main);
+    font-size: clamp(20px, 5vw,  28px);
+    font-weight: normal;
+    border-bottom: 2px solid var(--main);
+    position: relative;
+    width: fit-content;
+    padding: 5px 10px;
+    top: 8px;
+}
+
+.content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/******
+career
+******/
+
+#career p {
+    font-size: clamp(16px, 3vw, 22px);
+    line-height: clamp(24px, 4vw, 38px);
+    margin: clamp(20px, 4vw, 40px) 0;
+}
+
+#career img {
+    height: 350px;
+    object-fit: cover;
+}
+
+/*******
+question
+********/
+
+#question ul li {
+    margin: clamp(8px, 2vw, 16px) 0;
+}
+#question ul li details {
+    display: block;
+}
+#question ul li details summary {
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: var(--main);
+    padding: clamp(10px, 3vw, 20px);
+    border-radius: 5px;
+}
+
+#question ul li details summary::before {
+    content: "Q";
+    font-size: clamp(20px, 4vw, 28px);
+}
+
+#question ul li details[open] summary {
+    border-radius: 5px 5px 0 0;
+}
+
+#question ul li details summary p {
+    font-size: clamp(20px, 4vw, 28px);
+    font-weight: bold;
+}
+
+#question ul li details summary h3 {
+    font-size: clamp(16px, 3vw, 24px);
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+#question ul li details summary::after {
+    margin-left: auto;
+    background: url(triangle.svg) no-repeat;
+    width: clamp(16px, 3vw, 24px);
+    aspect-ratio: 1;
+    background-size: contain;
+}
+
+#question ul li details .answer {
+    display: flex;
+    gap: 20px;
+    border: 3px solid var(--main);
+    border-radius: 5px;
+    padding: clamp(10px, 3vw, 20px);
+    background-color: #fff;
+}
+
+#question ul li details[open] .answer {
+    border-radius: 0 0 5px 5px;
+}
+
+#question ul li details .answer::before {
+    content: "A";
+    font-size: clamp(20px, 4vw, 28px);
+    font-weight: bold;
+}
+
+#question ul li details .answer p {
+    font-size: clamp(16px, 3vw, 18px);
+    letter-spacing: 1px;
+}
+
+/******
+apply
+******/
+
+#apply .ap-desc {
+    font-size: clamp(16px, 3vw ,22px);
+    font-weight: 500;
+    text-align: center;
+    margin: clamp(20px, 4vw, 40px) 0;
+}
+
+#apply form .form-item .term-wr {
+    display: flex;
+    gap: 20px;
+    align-self: start;
+}
+
+#apply form .form-item .radio-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 16px 0 30px;
+}
+
+#apply form .form-item .term-wr .required {
+    background-color: var(--main);
+    width: fit-content;
+    aspect-ratio: 6/1;
+    color: #fff;
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 10px;
+    align-self: flex-start;
+}
+
+#apply form .form-item .term-wr .form-term {
+    display: flex;
+    align-items: center;
+    font-size: clamp(20px, 4vw, 24px);
+    font-weight: 500;
+}
+
+#apply form .form-item input:not([type="radio"]),
+#apply form .form-item textarea{
+    width: 100%;
+    max-width: 680px;
+    padding: 8px 16px;
+    font-size: 20px;
+    font-family: var(--normal-font);
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 16px 0 30px;
+}
+
+#apply form .form-item .radio-box label {
+    font-size: 20px;
+}
+
+#apply form .form-item .radio-box input[type="radio"] {
+    transform: scale(1.4);
+    margin-right: 10px;
+    accent-color: var(--font-color);
+}
+
+#apply form button {
+    display: flex;
+    align-items: center;
+    max-width: 330px;
+    width: 100%;
+    background-color: var(--main);
+    margin: clamp(20px, 4vw, 48px) auto ;
+    padding: 20px 40px;
+    border-radius: 50vh;
+}
+
+#apply form button p {
+    color: #fff;
+    font-size: 22px;
+    font-family: var(--normal-font);
+    letter-spacing: 2px;
+    margin: 0 auto;
+}
+
+#apply form button::after{
+    content: "＞";
+    color: #fff;
+    font-size: 22px;
+}
+
+@media(min-width:1000px) {
+    #apply form .form-item {
+        display: flex;
+        gap: 20px;
+        margin: 30px 0;
+    }
+    #apply form .form-item .term-wr .form-term {
+        flex-basis: 220px;
+        flex-shrink: 0;
+    }
+    #apply form .form-item .radio-box,
+    #apply form .form-item input:not([type="radio"]),
+    #apply form .form-item textarea {
+        margin: 0;
+    }
+
+}
+
