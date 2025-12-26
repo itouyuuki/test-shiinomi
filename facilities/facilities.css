@@ -95,6 +95,13 @@ boxes-wr
     margin: 0;
 }
 
+.boxes-wr ul li .box .text-box .title-wr .toggle{
+    background-color: #000;
+    width: 55px;
+    height:24px;
+    margin-left: auto;
+}
+
 .boxes-wr ul li .box .text-box .desc {
     font-size: clamp(16px, 3vw, 18px);
     font-family: var(--text-font);
